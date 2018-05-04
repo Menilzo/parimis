@@ -99,8 +99,22 @@
 }
 
 /*
+boutontrans{
+  color: black;
+  background: transparent;
+  span{
+    background: black;
+  }
+  span:before{
+    background: black;
+  }
+  span:after{
+    background: black;
+  }
+}
 .menublanc{
-  background: ;
+  background: white;
+  opacity: 0.9;
   a{
     color: ;
   }
@@ -119,7 +133,7 @@
   }
 }
 .menubleu{
-  background: ;
+  background: rgba(67, 179, 201, 0.9) ;
   a{
     color: ;
   }
