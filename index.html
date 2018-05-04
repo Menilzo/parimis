@@ -8,29 +8,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="parimis/js/midnight.jquery.min.js"></script>
   <script src="parimis/js/jquery.fadethis.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsvUG1Zn0rs4jZuQDo8-abFofn_7jhVqY&callback=initMap"
+    async defer>
+  </script>
   <title>Parimis 5*</title>
   <script type="text/javascript">
-   $(document).ready(function(){
+     $(document).ready(function(){
 
-     $('.menubouton').click(function(){
-       $('.menu').toggleClass('active');
-       $('.menubouton').toggleClass('toggle');
+       $('.menubouton').click(function(){
+         $('.menu').toggleClass('active');
+         $('.menubouton').toggleClass('toggle');
+       });
+
+       $('.navfixed').midnight();
+       $('.restoLegende').fadeThis({"reverse": false});
+       $('.restoImage').fadeThis()
+
+        $('.chambreItem').click(function(){
+          $(this).find('.overlay').toggleClass('overlaytoggle');
+          $(this).find('.titrerotation').toggleClass('titrerotationselected');
+          $(this).find('.plus').toggleClass('plusclique');
+        });
      });
-
-     $('.navfixed').midnight();
-     $('.restoLegende').fadeThis({"reverse": false});
-     $('.restoImage').fadeThis()
-
-      $('.chambreItem').click(function(){
-        $(this).find('.overlay').toggleClass('overlaytoggle');
-        $(this).find('.titrerotation').toggleClass('titrerotationselected');
-        $(this).find('.plus').toggleClass('plusclique');
-
-
-
-    });
-   });
-</script>
+  </script>
 </head>
 <body>
   <header>
@@ -129,10 +129,12 @@
     <section class="spa" data-midnight="navbleu">
       <h2>Le Spa</h2>
     </section>
-  </div>
-  <footer>
-
-  </footer>
+    <section>
+      <div id="map"></div>
+    </section>
+    <footer>
+      
+    </footer>
+  <script src="parimis/js/map.js"></script>
 </body>
-
 </html>

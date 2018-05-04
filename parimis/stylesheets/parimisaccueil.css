@@ -99,7 +99,47 @@
   transform: rotate(-45deg);
 }
 
-/* line 21, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/language/susy/_box-sizing.scss */
+/*
+.menublanc{
+  background: ;
+  a{
+    color: ;
+  }
+}
+.menuboutonblanc{
+  color: ;
+  background: ;
+  span{
+    background: ;
+  }
+  span:before{
+    background: ;
+  }
+  span:after{
+    background: ;
+  }
+}
+.menubleu{
+  background: ;
+  a{
+    color: ;
+  }
+}
+.menuboutonbleu{
+  color: ;
+  background: ;
+  span{
+    background: ;
+  }
+  span:before{
+    background: ;
+  }
+  span:after{
+    background: ;
+  }
+}
+*/
+/* line 21, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -218,7 +258,7 @@ body, html {
   margin-right: auto;
   height: 100vh;
 }
-/* line 12, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .imgintro:after {
   content: " ";
   display: block;
@@ -229,6 +269,8 @@ body, html {
 .imgintro::after {
   content: "";
   background: url(../img/origami.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -239,7 +281,7 @@ body, html {
   min-height: 90vh;
 }
 
-/* line 108, ../sass/parimisaccueil.scss */
+/* line 110, ../sass/parimisaccueil.scss */
 .bloom {
   text-align: center;
   position: absolute;
@@ -250,18 +292,18 @@ body, html {
   z-index: -1;
   box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
 }
-/* line 117, ../sass/parimisaccueil.scss */
+/* line 119, ../sass/parimisaccueil.scss */
 .bloom h1 {
   font-size: 5em;
   margin-top: 45vh;
 }
-/* line 120, ../sass/parimisaccueil.scss */
+/* line 122, ../sass/parimisaccueil.scss */
 .bloom h1 a {
   text-decoration: none;
   color: #BCA57D;
 }
 
-/* line 126, ../sass/parimisaccueil.scss */
+/* line 128, ../sass/parimisaccueil.scss */
 .parallax {
   background-image: url("../img/rooftop.jpg");
   background-attachment: fixed;
@@ -271,29 +313,29 @@ body, html {
   height: 500px;
 }
 
-/* line 136, ../sass/parimisaccueil.scss */
+/* line 138, ../sass/parimisaccueil.scss */
 h2 {
   text-align: center;
   padding-top: 30px;
   font-size: 50px;
 }
 
-/* line 141, ../sass/parimisaccueil.scss */
+/* line 143, ../sass/parimisaccueil.scss */
 p {
-  font-size: 25px;
+  font-size: 20px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  line-height: 2em;
+  line-height: 3em;
 }
 @media screen and (min-width: 700px) {
-  /* line 141, ../sass/parimisaccueil.scss */
+  /* line 143, ../sass/parimisaccueil.scss */
   p {
     width: 60%;
   }
 }
 
-/* line 152, ../sass/parimisaccueil.scss */
+/* line 154, ../sass/parimisaccueil.scss */
 .hotel {
   max-width: 100%;
   margin-left: auto;
@@ -301,21 +343,21 @@ p {
   min-height: 100vh;
   text-align: center;
 }
-/* line 12, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .hotel:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 157, ../sass/parimisaccueil.scss */
+/* line 159, ../sass/parimisaccueil.scss */
 .hotel::before {
   content: "";
   display: block;
   height: 50px;
 }
 
-/* line 168, ../sass/parimisaccueil.scss */
+/* line 170, ../sass/parimisaccueil.scss */
 .chambre {
   max-width: 100%;
   margin-left: auto;
@@ -326,17 +368,17 @@ p {
   padding-bottom: 5vh;
   box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
 }
-/* line 12, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .chambre:after {
   content: " ";
   display: block;
   clear: both;
 }
-/* line 176, ../sass/parimisaccueil.scss */
+/* line 178, ../sass/parimisaccueil.scss */
 .chambre .chambreIntro h2, .chambre .chambreIntro p {
   color: #BCA57D;
 }
-/* line 180, ../sass/parimisaccueil.scss */
+/* line 182, ../sass/parimisaccueil.scss */
 .chambre .chambreItem {
   width: 100%;
   float: left;
@@ -348,13 +390,13 @@ p {
   overflow: hidden;
 }
 @media screen and (min-width: 700px) {
-  /* line 180, ../sass/parimisaccueil.scss */
+  /* line 182, ../sass/parimisaccueil.scss */
   .chambre .chambreItem {
     width: 50%;
     float: left;
   }
 }
-/* line 191, ../sass/parimisaccueil.scss */
+/* line 193, ../sass/parimisaccueil.scss */
 .chambre .chambreItem img {
   position: absolute;
   top: 0;
@@ -363,7 +405,7 @@ p {
   height: 100%;
   border: 2px solid black;
 }
-/* line 200, ../sass/parimisaccueil.scss */
+/* line 202, ../sass/parimisaccueil.scss */
 .chambre .overlay {
   position: absolute;
   top: 0;
@@ -374,17 +416,17 @@ p {
   text-align: center;
   z-index: 15;
 }
-/* line 211, ../sass/parimisaccueil.scss */
+/* line 213, ../sass/parimisaccueil.scss */
 .chambre .overlaytoggle {
   background: black;
   opacity: 0.3;
   transition: 1s;
 }
-/* line 217, ../sass/parimisaccueil.scss */
+/* line 219, ../sass/parimisaccueil.scss */
 .chambre .plus {
   display: none;
 }
-/* line 220, ../sass/parimisaccueil.scss */
+/* line 222, ../sass/parimisaccueil.scss */
 .chambre .plusclique {
   position: absolute;
   display: block;
@@ -394,11 +436,11 @@ p {
   transform: translate(-50%, -50%);
   font-size: 25px;
 }
-/* line 230, ../sass/parimisaccueil.scss */
+/* line 232, ../sass/parimisaccueil.scss */
 .chambre .plus img {
   width: 100%;
 }
-/* line 233, ../sass/parimisaccueil.scss */
+/* line 235, ../sass/parimisaccueil.scss */
 .chambre .titrerotation {
   position: absolute;
   top: 0;
@@ -415,27 +457,27 @@ p {
   transform-origin: 0 100%;
   z-index: 50;
 }
-/* line 250, ../sass/parimisaccueil.scss */
+/* line 252, ../sass/parimisaccueil.scss */
 .chambre .titrerotationselected {
   transform: rotate(0deg);
   transition: transform 0.5s;
 }
 
-/* line 257, ../sass/parimisaccueil.scss */
+/* line 259, ../sass/parimisaccueil.scss */
 .resto {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
 }
-/* line 12, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .resto:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 261, ../sass/parimisaccueil.scss */
+/* line 263, ../sass/parimisaccueil.scss */
 .restoImage {
   width: 85.71429%;
   float: left;
@@ -443,13 +485,13 @@ p {
   min-height: 70vh;
   margin-bottom: 20px;
 }
-/* line 266, ../sass/parimisaccueil.scss */
+/* line 268, ../sass/parimisaccueil.scss */
 .restoImage img {
   max-width: 100%;
   max-height: 100%;
 }
 @media screen and (min-width: 700px) {
-  /* line 261, ../sass/parimisaccueil.scss */
+  /* line 263, ../sass/parimisaccueil.scss */
   .restoImage {
     width: 35.71429%;
     float: left;
@@ -457,7 +499,7 @@ p {
   }
 }
 
-/* line 275, ../sass/parimisaccueil.scss */
+/* line 277, ../sass/parimisaccueil.scss */
 .restoLegende {
   width: 85.71429%;
   float: left;
@@ -467,22 +509,22 @@ p {
   min-height: 50vh;
   box-shadow: 3px 3px 5px rgba(31, 15, 15, 0.2);
 }
-/* line 282, ../sass/parimisaccueil.scss */
+/* line 284, ../sass/parimisaccueil.scss */
 .restoLegende h3 {
   color: #BCA57D;
   font-weight: bold;
 }
-/* line 286, ../sass/parimisaccueil.scss */
+/* line 288, ../sass/parimisaccueil.scss */
 .restoLegende .carte {
   float: right;
 }
-/* line 289, ../sass/parimisaccueil.scss */
+/* line 291, ../sass/parimisaccueil.scss */
 .restoLegende .carte::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 294, ../sass/parimisaccueil.scss */
+/* line 296, ../sass/parimisaccueil.scss */
 .restoLegende p {
   font-size: 20px;
   width: 80%;
@@ -491,7 +533,7 @@ p {
   line-height: 1.5em;
 }
 @media screen and (min-width: 700px) {
-  /* line 275, ../sass/parimisaccueil.scss */
+  /* line 277, ../sass/parimisaccueil.scss */
   .restoLegende {
     width: 42.85714%;
     float: left;
@@ -500,7 +542,7 @@ p {
   }
 }
 
-/* line 309, ../sass/parimisaccueil.scss */
+/* line 311, ../sass/parimisaccueil.scss */
 .spa {
   max-width: 100%;
   margin-left: auto;
@@ -511,9 +553,15 @@ p {
   background-size: cover;
   min-height: 100vh;
 }
-/* line 12, ../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/susy-2.2.14/sass/susy/output/support/_clearfix.scss */
 .spa:after {
   content: " ";
   display: block;
   clear: both;
+}
+
+/* line 322, ../sass/parimisaccueil.scss */
+#map {
+  height: 400px;
+  width: 100%;
 }
