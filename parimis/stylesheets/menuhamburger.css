@@ -45,7 +45,7 @@
   outline: none;
   border: none;
   color: #f5f5f5;
-  background: black;
+  background-color: transparent;
   z-index: 99;
 }
 /* line 44, ../sass/menuhamburger.scss */
@@ -100,7 +100,7 @@
 
 /*
 boutontrans{
-  color: black;
+
   background: transparent;
   span{
     background: black;
