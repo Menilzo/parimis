@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'chequeregular';
+  src: url("../fonts/cheque-regular-webfont.woff2") format("woff2"), url("../fonts/cheque-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'stencil';
+  src: url("../fonts/zefanistenciluppercase-regular-webfont.ttf"), url("../fonts/zefanistenciluppercase-regular-webfont.woff2") format("woff2"), url("../fonts/zefanistenciluppercase-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

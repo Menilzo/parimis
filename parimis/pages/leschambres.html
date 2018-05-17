@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../stylesheets/normalize.css">
+  <link rel="stylesheet" href="../stylesheets/parimisaccueil.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="../js/midnight.jquery.min.js"></script>
+  <script src="../js/jquery.fadethis.js"></script>
+  <title>Les chambres</title>
+  <script type="text/javascript">
+     $(document).ready(function(){
+
+       $('.menubouton').click(function(){
+         $('.menu').toggleClass('active');
+         $('.menubouton').toggleClass('toggle');
+       });
+
+       $('.navfixed').midnight();
+       $('.restoLegende').fadeThis({"reverse": false});
+       $('.restoImage').fadeThis()
+
+        $('.chambreItem').click(function(){
+          $(this).find('.overlay').toggleClass('overlaytoggle');
+          $(this).find('.titrerotation').toggleClass('titrerotationselected');
+          $(this).find('.plus').toggleClass('plusclique');
+        });
+     });
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="navfixed">
+      <div class="navgauche">
+          <div><a href="#">Les Chambres</a></div>
+          <div><a href="#">Le Restaurant</a></div>
+      </div>
+      <div class="logo">
+        Parimis 5*
+        <!--Ici sera le logo-->
+      </div>
+      <div class="navdroite">
+          <div><a href="#">Le Spa</a></div>
+          <div><a href="#">Reserver</a></div>
+      </div>
+      <!--<div class="recherche">
+        <input type="text" name="" value="">
+        <button class="recherchebouton" type="button" name="button">
+          <span></span>
+        </button>
+      </div>-->
+    </nav>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Les chambres</a></li>
+        <li><a href="#">Le restaurant</a></li>
+        <li><a href="#">Le Spa</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="menubouton" type="button" name="button">
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <div class="corps">
+
+    <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="../img/rooftop.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="../img/rooftop.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="../img/rooftop.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- The dots/circles -->
+  <div class="divdot" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+
+  <section class="hotel" data-midnight="navblack">
+    <h4>Notre Héritage</h4>
+    <h2>Le Luxe à la Française</h2>
+    <div class="hotelpara">
+      <p class="paragauche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+      <p class="paradroite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+    </div>
+  </section>
+  <section class="chambre" data-midnight="navblanc">
+    <div class="chambreIntro">
+      <h2>Nos gammes de chambres</h2>
+    </div>
+    <div class="chambreItem" data-midnight="nonav">
+      <div class="overlay">
+        <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+      </div>
+      <img src="parimis/img/room1.jpg" alt="">
+      <h3 class="titrerotation">Chambre classique</h3>
+    </div>
+    <div class="chambreItem">
+      <img src="parimis/img/room1.jpg" alt="">
+      <div class="overlay">
+        <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+      </div>
+      <h3 class="titrerotation">Chambre confort</h3>
+    </div>
+    <div class="chambreItem">
+      <div class="overlay">
+        <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+      </div>
+      <img src="parimis/img/room1.jpg" alt="">
+      <h3 class="titrerotation">Chambres deluxe</h3>
+    </div>
+    <div class="chambreItem">
+      <div class="overlay">
+        <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+      </div>
+      <img src="parimis/img/room1.jpg" alt="">
+      <h3 class="titrerotation">Suites</h3>
+    </div>
+  </section>
+</div>
+  <footer>
+    <div class="rezo">
+      <div class="mediafooter">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <p>Rejoignez nous</p>
+        <p>
+          <a href="#">Facebook</a>
+        </p>
+      </div>
+      <div class="mediafooter">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <p>Gallerie</p>
+        <p>
+          <a href="#">Instagram</a>
+        </p>
+      </div>
+      <div class="mediafooter">
+        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+        <p>Réserver</p>
+        <p>
+          <a href="#">TripAdvisor</a>
+        </p>
+      </div>
+      <div class="mediafooter">
+        <a href="#"><i class="far fa-envelope-open"></i></a>
+        <p>Newsletter</p>
+        <form>
+          <input type="text" name="" value="" placeholder="Votre email">
+          <input type="submit" name="" value="OK">
+        </form>
+      </div>
+    </div>
+    <div class="mentions">
+      <div class="item">Adresse: 1 avenue Montaigne <br>
+                    75008 Paris <br>
+                    Téléphone +33 1 42 76 88 99 <br>
+                    Fax +33 1 42 76 88 90 <br>
+                    EMAIL bonjour@hotelparimis.com
+      </div>
+      <div class="item titre"><h3>Parimis</h3></div>
+      <div class="item">Mentions légales <br>
+                        Crédits <br>
+                        Presse <br>
+                        Modifier ma reservation
+      </div>
+    </div>
+    <div class="footerbottom">Hôtel accessible aux personnes à mobilité réduite <br>
+                              Site officiel -  Tous droits réservés -  Hôtel Parimis © 2018 -  Conception & réalisation Benjamin Debrach
+    </div>
+  </footer>
+  <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

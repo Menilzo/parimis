@@ -1,7 +1,11 @@
 @import 'susy';
 @import 'color';
+@import 'fonts';
 @import 'menuhamburger';
+@import 'nav';
+@import 'footer';
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Federo);
 
 $susy: (
 columns: 14,
@@ -14,18 +18,24 @@ gutter-position: inside,
 );
 
 @include border-box-sizing;
-
+* {
+    margin: 0;
+    padding: 0;
+}
 body, html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 h2{
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 60px;
   font-size: 50px;
+  font-family: 'Federo', sans-serif;
 }
 p{
   font-size: 16px;
@@ -37,22 +47,35 @@ p{
     width: 60%;
   };
 }
-
-
+a{
+  text-decoration: none;
+}
+section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .navfixed{
   position: fixed;
   top: 0;
   width:100%;
   text-align: center;
   height: 60px !important;
+  background: white;
   z-index: 80;
-  font-size: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  a{
+    color: black;
+  }
+  a:hover{
+    color: #ae8f60;
+  }
   .navgauche{
     visibility:hidden;
     @include span(4 of 14);
     @include push(1 of 14);
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
     div{
       @include span(1 of 2);
     };
@@ -63,7 +86,8 @@ p{
   .logo{
     @include span (1 of 1);
     font-size: 50px;
-    margin-top: -50px;
+    line-height: 60px;
+    margin-top: -60px;
     @media screen and (min-width: 700px){
       @include span(4 of 14);
       margin-top: 0;
@@ -72,8 +96,9 @@ p{
   .navdroite{
     visibility:hidden;
     @include span(4 of 14 );
-    height: 50px;
-    line-height: 50px;
+    @include pull(1 of 14);
+    height: 60px;
+    line-height: 60px;
     div{
       @include span(1 of 2)
     };
@@ -82,6 +107,193 @@ p{
     };
   }
 }
+
+//Réservation
+.book{
+  text-align: center;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 100;
+  box-sizing: border-box;
+  top: 0px;
+  right: 0px;
+  color: black;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  font-size: 18px;
+  background: black;
+  color: white;
+  overflow: hidden;
+  i{
+    padding-top: 14px;
+    font-size: 30px;
+    color: white;
+  }
+  @media screen and (min-width: 700px){
+    width: 180px;
+    i{
+      display: none;
+    }
+
+  }
+}
+.book::after {
+      position: absolute;
+      pointer-events: none;
+      z-index: 10;
+      content: '';
+      bottom: 0%;
+      left: 0%;
+      right: 100%;
+      display: block;
+      height: 3px;
+      background-color: #ae8f60;
+      -webkit-transition: right 0.45s;
+      -moz-transition: right 0.45s;
+      transition: right 0.45s;
+}
+.book:hover::after{
+	right:0%;
+	-webkit-transition: right 0.6s;
+	-moz-transition: right 0.6s;
+	transition: right 0.6s;
+}
+.book::before {
+    position: absolute;
+    pointer-events: none;
+    z-index: 10;
+    content: '';
+    top: 0%;
+    left: -100%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ae8f60;
+    -webkit-transition: left 0s;
+    -moz-transition: left 0s;
+    transition: left 0s;
+}
+.book:hover::before{
+	left:100%;
+	-webkit-transition: left 0.6s;
+	-moz-transition: left 0.6s;
+	transition: left 0.6s;
+}
+
+div.overlaybooking{
+	position:fixed;
+	z-index:101;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	margin:0px;
+	padding:0px;
+	text-align:center;
+  color: white;
+	background-image:url(../img/booktoggle.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+	visibility:hidden;
+	transition: all 0.7s;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+div.overlaybooking.open{
+	visibility:visible;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	-o-transition: all 0.7s;
+	transition: all 0.7s;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+div.overlaybooking .close{
+  position: absolute;
+  right: 0;
+  height: 60px;
+  width: 60px;
+  background: white;
+  cursor: pointer;
+}
+.close span{
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 10px;
+  height: 3px;
+  width: 40px;
+  background: black;
+  transform: rotate(45deg);
+}
+.close:hover span{
+  transform: rotate(-45deg);
+  transition: .5s;
+}
+.close span::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: black;
+  transform: rotate(-90deg);
+}
+.close:hover{
+  background: black;
+  color: white;
+}
+.close::after {
+      position: absolute;
+      pointer-events: none;
+      z-index:10;
+      content: '';
+      bottom: 0%;
+      left: 0%;
+      right: 100%;
+      display: block;
+      height: 3px;
+      background-color: #ae8f60;
+      -webkit-transition: right 0.45s;
+      -moz-transition: right 0.45s;
+      transition: right 0.45s;
+}
+.close:hover::after{
+	right:0%;
+	-webkit-transition: right 0.6s;
+	-moz-transition: right 0.6s;
+	transition: right 0.6s;
+}
+// .close::before {
+//     position: absolute;
+//     pointer-events: none;
+//     z-index: 10;
+//     content: '';
+//     top: 0%;
+//     left: -100%;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #ae8f60;
+//     -webkit-transition: left 0s;
+//     -moz-transition: left 0s;
+//     transition: left 0s;
+// }
+// .close:hover::before{
+// 	left:100%;
+// 	-webkit-transition: left 0.6s;
+// 	-moz-transition: left 0.6s;
+// 	transition: left 0.6s;
+// }
+
+
+
+
+
 .midnightHeader.navblack{
   color: #BCA57D;
   background: black;
@@ -105,14 +317,17 @@ p{
   top: 0;
   right: 0;
 }
+
+
 .imgintro{
   @include container;
-  height: 100vh;
+  height: 95vh;
   text-align: center;
   z-index: 100;
   h1{
     font-size: 5em;
-    margin-top: 45vh;
+    padding-top: 45vh;
+    font-family: "stencil";
     a{
       text-decoration: none;
       color: #BCA57D;
@@ -132,7 +347,7 @@ p{
   right: 0;
   position: absolute;
   z-index: -1;
-  min-height: 90vh;
+  min-height: 100vh;
 }
 .bloom{
   position:absolute;
@@ -155,17 +370,67 @@ p{
   }
 }
 
-
+.corps{
+  width: 100%;
+  @media screen and (min-width: 700px){
+  margin:0;
+  padding: 0 25px;
+  }
+}
 
 .hotel{
   @include container;
+  position: relative;
   min-height: 100vh;
   text-align: center;
+  background-image: url('../img/pattern.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  h4{
+    color: #ae8f60;
+  }
+  h2{
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
 }
 .hotel::before{
   content: "";
   display: block;
   height: 50px;
+}
+// .hotel::after{
+//     position: absolute;
+//     content: '';
+//     top: 0px;
+//     bottom: 0px;
+//     left: 50%;
+//     display: block;
+//     margin-left: -1px;
+//     width: 1px;
+//     background-color: rgba(0,0,0,0.1);
+//
+// }
+.hotelpara{
+  @media screen and (min-width: 700px){
+    @include span (4 of 6);
+    @include push (1 of 6);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+  }
+  p{
+    @include span (1 of 1);
+    padding: 0 60px 60px 60px;
+    @media screen and (min-width: 700px){
+      @include span (1 of 2);
+    }
+  }
+  .paragauche{
+    border-right: 1px solid #ae8f60;
+  }
+  // .paradroite{
+  //   border-left: 1px solid #ae8f60;
+  // } à voir pour smartphone
 }
 
 
@@ -175,8 +440,11 @@ p{
 
 .chambre{
   @include container;
+  background-image: url('../img/booktoggle.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
-  background: $bordeau;
   text-align: center;
   padding-bottom: 5vh;
   box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
@@ -184,6 +452,12 @@ p{
       h2,p{
         color: #BCA57D;
       }
+  }
+  .roomgalery{
+    @media screen and (min-width: 700px){
+      @include span (8 of 10);
+      @include push (1 of 10);
+    }
   }
   .chambreItem{
     @include span(1 of 1);
@@ -194,15 +468,21 @@ p{
     position: relative;
     overflow: hidden;
     @media screen and (min-width: 700px){
-    @include span (1 of 2)
+    @include span (1 of 2);
     }
     img{
       position: absolute;
+      z-index: 14;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border: 2px solid black
+      border: 2px solid black;
+      transition: .5s;
+
+    }
+    img:hover{
+      transform: scale(1.1);
     }
   }
   .overlay{
@@ -213,13 +493,13 @@ p{
     height: 100%;
     width: 100%;
     text-align: center;
-    z-index: 15;
 
   }
   .overlaytoggle{
     background: black;
     opacity: 0.3;
     transition: 1s;
+    z-index: 15;
 
   }
   .plus{
@@ -245,7 +525,7 @@ p{
     margin: 0;
     padding-left: 20px;
     padding-right: 50px;
-    background: $bordeau;
+    background:black;
     font-size: 20px;
     color: #BCA57D;
     display: inline-block;
@@ -265,6 +545,19 @@ p{
 .resto{
   @include container;
   min-height: 100vh;
+  background-image: url('../img/pattern.jpg');
+  background-repeat: repeat;
+  background-position: center;
+}
+.pageresto{
+  background: linear-gradient(to bottom, rgba(247,236,228,1), rgba(229,234,245,1));
+  margin-top: 30px;
+}
+.restoItem{
+  @include container;
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
 }
 .restoImage{
   @include span (12 of 14);
@@ -284,11 +577,11 @@ p{
   @include span (12 of 14);
   @include push(1 of 14);
   padding: 50px 30px;
-  background: $gold;
+  background: white;
   min-height: 50vh;
-  box-shadow: 3px 3px 5px rgba(31, 15, 15, 0.2);
+  box-shadow: 0 4px 15px 0 rgba(143,147,174,.3);
   h3{
-    color: $bordeau  ;
+    color: black;
     font-weight: bold;
   }
   .carte{
@@ -312,23 +605,294 @@ p{
     margin-top: 10vh;
   };
 }
-
+.restoImagedroite{
+  @include span (12 of 14);
+  @include push(1 of 14);
+  min-height: 70vh;
+  margin-bottom: 20px;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  @media screen and (min-width: 700px){
+    @include span(5 of 14);
+    @include pull(2 of 14)
+  };
+}
+.restoLegendegauche{
+  @include span (12 of 14);
+  @include push(1 of 14);
+  padding: 50px 30px;
+  background: white;
+  min-height: 50vh;
+  box-shadow: 0 4px 15px 0 rgba(143,147,174,.3);
+  h3{
+    color: black;
+    font-weight: bold;
+  }
+  .carte{
+    float: right;
+  }
+  .carte::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  p{
+    font-size: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5em;
+  }
+  @media screen and (min-width: 700px){
+    @include span (6 of 14);
+    @include push(1 of 14);
+    margin-top: 10vh;
+  };
+}
 
 .spa{
   @include container;
-  background-image:linear-gradient(to bottom, rgba(255,255,255,1), rgba(67, 179, 201,0.5)),
+  background-image:linear-gradient(to bottom, rgba(244,244,244,1), rgba(67, 179, 201,0.5)),
   url(../img/spa.jpg);
-
+  position: relative;
+  // box-shadow: 0 5px 5px 0 rgba(31, 15, 15, 0.2);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
-
+.soins{
+  width:90%;
+  margin:0 auto;
+  background: rgba(255,255,255, 0.4);
+  border: 2px solid #ae8f60;
+  box-shadow: 0 4px 15px 0 rgba(143,147,174,.3);
+  padding: 40px;
+  @media screen and (min-width: 700px){
+  width:40%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  }
+}
+.location{
+  min-height: 700px;
+  position: relative;
+  padding-bottom: 20px;
+  background-image: url('../img/pattern.jpg');
+  background-repeat: repeat;
+  background-position: center;
+}
 #map{
-  height:400px;
+  height:570px;
   width: 100%;
 }
-.footer{
+.contact{
+  width: 100%;
+  padding: 40px;
+  @media screen and (min-width: 700px){
+  position: absolute;
+  bottom:75px;
+  left: 250px;
+  z-index: 79;
+  width: 20%;
+  background: white;
+  box-shadow: 0 4px 15px 0 rgba(143,147,174,.3);
+  }
+}
+footer{
+  width: 100%;
+  @media screen and (min-width: 700px){
+  padding: 0 25px;
+  margin:0;
+  }
+  color: black;
+  min-height: 50vh;
+  .rezo{
+    height: 600px;
+    background-image: url('../img/rezo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    a{
+      color: #AC8F5D;
+    }
+    @media screen and(min-width: 700px ){
+      height: 150px;
+    }
+  }
+  .mediafooter{
+    @include span (1 of 1);
+    height: 150px;
+    color: white;
+    @media screen and(min-width: 700px ){
+      height: 150px;
+      @include span (1 of 4);
+      }
+  }
+  .mentions{
+    @include container;
+    @media screen and(min-width:700px){
+      @include span (2 of 4);
+      @include push (1 of 4);
+      height: 200px;
+    }
+    .item{
+      padding-top: 45px;
+      @include span (1 of 1);
+      @media screen and(min-width: 700px){
+        @include span (1 of 3);
+      }
+    }
+    .titre{
+      position: relative;
+      h3{
+      padding-top: 20px;
+      font-size: 25px;
+      }
+    }
+    .titre::before{
+      content: '';
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      margin-left: 20px;
+      width: 1px;
+      height: 100px;
+      background: black;
+      transition: width 0.3s;
+    }
+    .titre::after{
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      margin-right: 20px;
+      width: 1px;
+      height: 100px;
+      background: black;
+      transition: width 0.3s;
+    }
+  }
+  .footerbottom{
+    @include container;
+    padding-top: 45px;
+    @media screen and(min-width:700px){
+      @include span (2 of 4);
+      @include push (1 of 4);
+      height: 150px;
+    }
+  }
+}
+footer i{
+  padding-top: 20px;
+  font-size: 30px;
+  color: #AC8F5D;
 
+}
+
+
+.slideshow-container {
+  width:100%;
+  position: relative;
+  margin: auto;
+  height: 750px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.prev{
+  left:0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.divdot{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
