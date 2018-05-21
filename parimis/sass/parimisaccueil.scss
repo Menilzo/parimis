@@ -749,6 +749,10 @@ footer{
   .mentions{
     @include container;
     padding-top: 30px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
     @media screen and(min-width:768px){
       @include span (2 of 4);
       @include push (1 of 4);
