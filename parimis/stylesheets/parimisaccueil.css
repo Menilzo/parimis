@@ -618,30 +618,29 @@ div.overlaybooking .close {
   background-image: url("../img/rooftop.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   height: 600px;
 }
 @media screen and (min-width: 768px) {
   /* line 352, ../sass/parimisaccueil.scss */
   .parallax {
     background-attachment: fixed !important;
-    background-size: cover;
   }
 }
 
-/* line 364, ../sass/parimisaccueil.scss */
+/* line 363, ../sass/parimisaccueil.scss */
 .corps {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 364, ../sass/parimisaccueil.scss */
+  /* line 363, ../sass/parimisaccueil.scss */
   .corps {
     margin: 0;
     padding: 0 25px;
   }
 }
 
-/* line 372, ../sass/parimisaccueil.scss */
+/* line 371, ../sass/parimisaccueil.scss */
 .hotel {
   max-width: 100%;
   margin-left: auto;
@@ -659,13 +658,13 @@ div.overlaybooking .close {
   display: block;
   clear: both;
 }
-/* line 380, ../sass/parimisaccueil.scss */
+/* line 379, ../sass/parimisaccueil.scss */
 .hotel h2 {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
-/* line 385, ../sass/parimisaccueil.scss */
+/* line 384, ../sass/parimisaccueil.scss */
 .hotel::before {
   content: "";
   display: block;
@@ -673,7 +672,7 @@ div.overlaybooking .close {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 390, ../sass/parimisaccueil.scss */
+  /* line 389, ../sass/parimisaccueil.scss */
   .hotelpara {
     width: 66.66667%;
     float: left;
@@ -682,29 +681,29 @@ div.overlaybooking .close {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
-/* line 397, ../sass/parimisaccueil.scss */
+/* line 396, ../sass/parimisaccueil.scss */
 .hotelpara p {
   width: 100%;
   float: left;
   padding: 0 60px 60px 60px;
 }
 @media screen and (min-width: 1024px) {
-  /* line 397, ../sass/parimisaccueil.scss */
+  /* line 396, ../sass/parimisaccueil.scss */
   .hotelpara p {
     width: 50%;
     float: left;
   }
 }
-/* line 404, ../sass/parimisaccueil.scss */
+/* line 403, ../sass/parimisaccueil.scss */
 .hotelpara .paragauche {
   border-right: 1px solid #ae8f60;
 }
-/* line 407, ../sass/parimisaccueil.scss */
+/* line 406, ../sass/parimisaccueil.scss */
 .hotelpara .paradroite {
   border-left: 1px solid #ae8f60;
 }
 
-/* line 411, ../sass/parimisaccueil.scss */
+/* line 410, ../sass/parimisaccueil.scss */
 .spriteHotel {
   background: url("../img/img/story-2.png") -2px -133px;
   margin: 0 auto;
@@ -713,7 +712,7 @@ div.overlaybooking .close {
   margin-bottom: 10px;
 }
 
-/* line 423, ../sass/parimisaccueil.scss */
+/* line 422, ../sass/parimisaccueil.scss */
 .chambre {
   max-width: 100%;
   margin-left: auto;
@@ -733,23 +732,23 @@ div.overlaybooking .close {
   display: block;
   clear: both;
 }
-/* line 434, ../sass/parimisaccueil.scss */
+/* line 433, ../sass/parimisaccueil.scss */
 .chambre .chambreIntro h2, .chambre .chambreIntro p {
   color: #BCA57D;
 }
-/* line 437, ../sass/parimisaccueil.scss */
+/* line 436, ../sass/parimisaccueil.scss */
 .chambre .chambreIntro h4 {
   color: #f1f1f1;
 }
 @media screen and (min-width: 768px) {
-  /* line 441, ../sass/parimisaccueil.scss */
+  /* line 440, ../sass/parimisaccueil.scss */
   .chambre .roomgalery {
     width: 80%;
     float: left;
     margin-left: 10%;
   }
 }
-/* line 447, ../sass/parimisaccueil.scss */
+/* line 446, ../sass/parimisaccueil.scss */
 .chambre .chambreItem {
   width: 100%;
   float: left;
@@ -764,13 +763,13 @@ div.overlaybooking .close {
   overflow: hidden;
 }
 @media screen and (min-width: 992px) {
-  /* line 447, ../sass/parimisaccueil.scss */
+  /* line 446, ../sass/parimisaccueil.scss */
   .chambre .chambreItem {
     width: 50%;
     float: left;
   }
 }
-/* line 461, ../sass/parimisaccueil.scss */
+/* line 460, ../sass/parimisaccueil.scss */
 .chambre .chambreItem img {
   position: absolute;
   z-index: 14;
@@ -780,7 +779,7 @@ div.overlaybooking .close {
   height: 100%;
   transition: .5s;
 }
-/* line 472, ../sass/parimisaccueil.scss */
+/* line 471, ../sass/parimisaccueil.scss */
 .chambre .overlay {
   position: absolute;
   top: 0;
@@ -790,18 +789,18 @@ div.overlaybooking .close {
   width: 100%;
   text-align: center;
 }
-/* line 482, ../sass/parimisaccueil.scss */
+/* line 481, ../sass/parimisaccueil.scss */
 .chambre .overlaytoggle {
   background: black;
   opacity: 0.3;
   transition: 1s;
   z-index: 15;
 }
-/* line 489, ../sass/parimisaccueil.scss */
+/* line 488, ../sass/parimisaccueil.scss */
 .chambre .plus {
   display: none;
 }
-/* line 492, ../sass/parimisaccueil.scss */
+/* line 491, ../sass/parimisaccueil.scss */
 .chambre .plusclique {
   position: absolute;
   display: block;
@@ -812,11 +811,11 @@ div.overlaybooking .close {
   transform: translate(-50%, -50%);
   font-size: 25px;
 }
-/* line 503, ../sass/parimisaccueil.scss */
+/* line 502, ../sass/parimisaccueil.scss */
 .chambre .plus img {
   width: 100%;
 }
-/* line 506, ../sass/parimisaccueil.scss */
+/* line 505, ../sass/parimisaccueil.scss */
 .chambre .titrerotation {
   position: absolute;
   top: 0;
@@ -833,13 +832,13 @@ div.overlaybooking .close {
   transform-origin: 0 100%;
   z-index: 50;
 }
-/* line 523, ../sass/parimisaccueil.scss */
+/* line 522, ../sass/parimisaccueil.scss */
 .chambre .titrerotationselected {
   transform: rotate(0deg);
   transition: transform 0.5s;
 }
 
-/* line 529, ../sass/parimisaccueil.scss */
+/* line 528, ../sass/parimisaccueil.scss */
 .spriteChambre {
   background: url("../img/img/story-2.png") -89px -2px;
   width: 69px;
@@ -848,7 +847,7 @@ div.overlaybooking .close {
   margin-bottom: 10px;
 }
 
-/* line 537, ../sass/parimisaccueil.scss */
+/* line 536, ../sass/parimisaccueil.scss */
 .resto {
   max-width: 100%;
   margin-left: auto;
@@ -865,13 +864,13 @@ div.overlaybooking .close {
   clear: both;
 }
 
-/* line 544, ../sass/parimisaccueil.scss */
+/* line 543, ../sass/parimisaccueil.scss */
 .pageresto {
   background: linear-gradient(to bottom, #f7ece4, #e5eaf5);
   margin-top: 30px;
 }
 
-/* line 548, ../sass/parimisaccueil.scss */
+/* line 547, ../sass/parimisaccueil.scss */
 .spriteResto {
   background: url("../img/img/story-4.png") -2px -87px;
   width: 120px;
@@ -880,7 +879,7 @@ div.overlaybooking .close {
   margin-bottom: 10px;
 }
 
-/* line 555, ../sass/parimisaccueil.scss */
+/* line 554, ../sass/parimisaccueil.scss */
 .Item {
   max-width: 100%;
   margin-left: auto;
@@ -896,7 +895,7 @@ div.overlaybooking .close {
   clear: both;
 }
 
-/* line 561, ../sass/parimisaccueil.scss */
+/* line 560, ../sass/parimisaccueil.scss */
 .Itemimage {
   width: 85.71429%;
   float: left;
@@ -904,13 +903,13 @@ div.overlaybooking .close {
   min-height: 50vh;
   margin-bottom: 20px;
 }
-/* line 566, ../sass/parimisaccueil.scss */
+/* line 565, ../sass/parimisaccueil.scss */
 .Itemimage img {
   max-width: 100%;
   max-height: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 561, ../sass/parimisaccueil.scss */
+  /* line 560, ../sass/parimisaccueil.scss */
   .Itemimage {
     width: 35.71429%;
     float: left;
@@ -918,7 +917,7 @@ div.overlaybooking .close {
   }
 }
 
-/* line 575, ../sass/parimisaccueil.scss */
+/* line 574, ../sass/parimisaccueil.scss */
 .Itemlegende {
   width: 85.71429%;
   float: left;
@@ -928,26 +927,26 @@ div.overlaybooking .close {
   min-height: 50vh;
   box-shadow: 0 4px 15px 0 rgba(143, 147, 174, 0.3);
 }
-/* line 582, ../sass/parimisaccueil.scss */
+/* line 581, ../sass/parimisaccueil.scss */
 .Itemlegende h3 {
   text-align: left;
   color: black;
   font-weight: bold;
 }
-/* line 587, ../sass/parimisaccueil.scss */
+/* line 586, ../sass/parimisaccueil.scss */
 .Itemlegende .voirPlus {
   text-align: right;
 }
-/* line 589, ../sass/parimisaccueil.scss */
+/* line 588, ../sass/parimisaccueil.scss */
 .Itemlegende .voirPlus a {
   text-decoration: none;
   color: black;
 }
-/* line 593, ../sass/parimisaccueil.scss */
+/* line 592, ../sass/parimisaccueil.scss */
 .Itemlegende .voirPlus a:hover {
   color: #ae8f60;
 }
-/* line 597, ../sass/parimisaccueil.scss */
+/* line 596, ../sass/parimisaccueil.scss */
 .Itemlegende p {
   font-size: 20px;
   width: 80%;
@@ -957,7 +956,7 @@ div.overlaybooking .close {
   line-height: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  /* line 575, ../sass/parimisaccueil.scss */
+  /* line 574, ../sass/parimisaccueil.scss */
   .Itemlegende {
     width: 42.85714%;
     float: left;
@@ -966,7 +965,7 @@ div.overlaybooking .close {
   }
 }
 
-/* line 611, ../sass/parimisaccueil.scss */
+/* line 610, ../sass/parimisaccueil.scss */
 .ItemlegendeInverse {
   width: 85.71429%;
   float: left;
@@ -976,22 +975,22 @@ div.overlaybooking .close {
   min-height: 50vh;
   box-shadow: 0 4px 15px 0 rgba(143, 147, 174, 0.3);
 }
-/* line 618, ../sass/parimisaccueil.scss */
+/* line 617, ../sass/parimisaccueil.scss */
 .ItemlegendeInverse h3 {
   color: black;
   font-weight: bold;
 }
-/* line 622, ../sass/parimisaccueil.scss */
+/* line 621, ../sass/parimisaccueil.scss */
 .ItemlegendeInverse .voirPlus {
   float: right;
 }
-/* line 625, ../sass/parimisaccueil.scss */
+/* line 624, ../sass/parimisaccueil.scss */
 .ItemlegendeInverse .voirPlus::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 630, ../sass/parimisaccueil.scss */
+/* line 629, ../sass/parimisaccueil.scss */
 .ItemlegendeInverse p {
   font-size: 20px;
   width: 80%;
@@ -1000,7 +999,7 @@ div.overlaybooking .close {
   line-height: 1.5em;
 }
 @media screen and (min-width: 768px) {
-  /* line 611, ../sass/parimisaccueil.scss */
+  /* line 610, ../sass/parimisaccueil.scss */
   .ItemlegendeInverse {
     width: 42.85714%;
     float: left;
@@ -1009,7 +1008,7 @@ div.overlaybooking .close {
   }
 }
 
-/* line 643, ../sass/parimisaccueil.scss */
+/* line 642, ../sass/parimisaccueil.scss */
 .ItemimageInverse {
   width: 85.71429%;
   float: left;
@@ -1017,13 +1016,13 @@ div.overlaybooking .close {
   min-height: 50vh;
   margin-bottom: 20px;
 }
-/* line 648, ../sass/parimisaccueil.scss */
+/* line 647, ../sass/parimisaccueil.scss */
 .ItemimageInverse img {
   max-width: 100%;
   max-height: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 643, ../sass/parimisaccueil.scss */
+  /* line 642, ../sass/parimisaccueil.scss */
   .ItemimageInverse {
     width: 35.71429%;
     float: left;
@@ -1031,7 +1030,7 @@ div.overlaybooking .close {
   }
 }
 
-/* line 658, ../sass/parimisaccueil.scss */
+/* line 657, ../sass/parimisaccueil.scss */
 .spa {
   max-width: 100%;
   margin-left: auto;
@@ -1050,7 +1049,7 @@ div.overlaybooking .close {
   clear: both;
 }
 
-/* line 669, ../sass/parimisaccueil.scss */
+/* line 668, ../sass/parimisaccueil.scss */
 .soins {
   width: 90%;
   margin: 0 auto;
@@ -1060,7 +1059,7 @@ div.overlaybooking .close {
   padding: 40px;
 }
 @media screen and (min-width: 768px) {
-  /* line 669, ../sass/parimisaccueil.scss */
+  /* line 668, ../sass/parimisaccueil.scss */
   .soins {
     width: 40%;
     height: 50%;
@@ -1071,7 +1070,7 @@ div.overlaybooking .close {
   }
 }
 
-/* line 685, ../sass/parimisaccueil.scss */
+/* line 684, ../sass/parimisaccueil.scss */
 .location {
   min-height: 700px;
   position: relative;
@@ -1081,19 +1080,19 @@ div.overlaybooking .close {
   background-position: center;
 }
 
-/* line 693, ../sass/parimisaccueil.scss */
+/* line 692, ../sass/parimisaccueil.scss */
 #map {
   height: 570px;
   width: 100%;
 }
 
-/* line 697, ../sass/parimisaccueil.scss */
+/* line 696, ../sass/parimisaccueil.scss */
 .contact {
   width: 100%;
   padding: 40px;
 }
 @media screen and (min-width: 768px) {
-  /* line 697, ../sass/parimisaccueil.scss */
+  /* line 696, ../sass/parimisaccueil.scss */
   .contact {
     position: absolute;
     bottom: 75px;
@@ -1105,33 +1104,33 @@ div.overlaybooking .close {
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 697, ../sass/parimisaccueil.scss */
+  /* line 696, ../sass/parimisaccueil.scss */
   .contact {
     width: 30%;
     left: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 697, ../sass/parimisaccueil.scss */
+  /* line 696, ../sass/parimisaccueil.scss */
   .contact {
     width: 25%;
   }
 }
 
-/* line 717, ../sass/parimisaccueil.scss */
+/* line 716, ../sass/parimisaccueil.scss */
 footer {
   width: 100%;
   color: black;
   min-height: 50vh;
 }
 @media screen and (min-width: 768px) {
-  /* line 717, ../sass/parimisaccueil.scss */
+  /* line 716, ../sass/parimisaccueil.scss */
   footer {
     padding: 0 25px;
     margin: 0;
   }
 }
-/* line 725, ../sass/parimisaccueil.scss */
+/* line 724, ../sass/parimisaccueil.scss */
 footer .rezo {
   height: 600px;
   background-image: url("../img/rezo.jpg");
@@ -1139,36 +1138,36 @@ footer .rezo {
   background-position: center;
   background-size: cover;
 }
-/* line 731, ../sass/parimisaccueil.scss */
+/* line 730, ../sass/parimisaccueil.scss */
 footer .rezo a {
   color: #AC8F5D;
 }
 @media screen and (min-width: 768px) {
-  /* line 725, ../sass/parimisaccueil.scss */
+  /* line 724, ../sass/parimisaccueil.scss */
   footer .rezo {
     height: 150px;
   }
 }
-/* line 738, ../sass/parimisaccueil.scss */
+/* line 737, ../sass/parimisaccueil.scss */
 footer .mediafooter {
   width: 100%;
   float: left;
   height: 150px;
   color: white;
 }
-/* line 742, ../sass/parimisaccueil.scss */
+/* line 741, ../sass/parimisaccueil.scss */
 footer .mediafooter input {
   max-width: 80%;
 }
 @media screen and (min-width: 768px) {
-  /* line 738, ../sass/parimisaccueil.scss */
+  /* line 737, ../sass/parimisaccueil.scss */
   footer .mediafooter {
     height: 150px;
     width: 25%;
     float: left;
   }
 }
-/* line 750, ../sass/parimisaccueil.scss */
+/* line 749, ../sass/parimisaccueil.scss */
 footer .mentions {
   max-width: 100%;
   margin-left: auto;
@@ -1182,7 +1181,7 @@ footer .mentions:after {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  /* line 750, ../sass/parimisaccueil.scss */
+  /* line 749, ../sass/parimisaccueil.scss */
   footer .mentions {
     width: 50%;
     float: left;
@@ -1190,29 +1189,29 @@ footer .mentions:after {
     height: 230px;
   }
 }
-/* line 758, ../sass/parimisaccueil.scss */
+/* line 757, ../sass/parimisaccueil.scss */
 footer .mentions .footer {
   padding-top: 45px;
   width: 100%;
   float: left;
 }
 @media screen and (min-width: 768px) {
-  /* line 758, ../sass/parimisaccueil.scss */
+  /* line 757, ../sass/parimisaccueil.scss */
   footer .mentions .footer {
     width: 33.33333%;
     float: left;
   }
 }
-/* line 765, ../sass/parimisaccueil.scss */
+/* line 764, ../sass/parimisaccueil.scss */
 footer .mentions .titre {
   position: relative;
 }
-/* line 767, ../sass/parimisaccueil.scss */
+/* line 766, ../sass/parimisaccueil.scss */
 footer .mentions .titre h3 {
   padding-top: 20px;
   font-size: 25px;
 }
-/* line 772, ../sass/parimisaccueil.scss */
+/* line 771, ../sass/parimisaccueil.scss */
 footer .mentions .titre::before {
   content: '';
   position: absolute;
@@ -1224,7 +1223,7 @@ footer .mentions .titre::before {
   background: black;
   transition: width 0.3s;
 }
-/* line 783, ../sass/parimisaccueil.scss */
+/* line 782, ../sass/parimisaccueil.scss */
 footer .mentions .titre::after {
   content: '';
   position: absolute;
@@ -1236,14 +1235,14 @@ footer .mentions .titre::after {
   background: black;
   transition: width 0.3s;
 }
-/* line 795, ../sass/parimisaccueil.scss */
+/* line 794, ../sass/parimisaccueil.scss */
 footer .footerbottom {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 45px;
 }
-/* line 796, ../sass/parimisaccueil.scss */
+/* line 795, ../sass/parimisaccueil.scss */
 footer .footerbottom p {
   padding-top: 15px;
   line-height: 1em;
@@ -1255,7 +1254,7 @@ footer .footerbottom:after {
   clear: both;
 }
 @media screen and (min-width: 768px) {
-  /* line 795, ../sass/parimisaccueil.scss */
+  /* line 794, ../sass/parimisaccueil.scss */
   footer .footerbottom {
     width: 50%;
     float: left;
@@ -1264,14 +1263,14 @@ footer .footerbottom:after {
   }
 }
 
-/* line 809, ../sass/parimisaccueil.scss */
+/* line 808, ../sass/parimisaccueil.scss */
 footer i {
   padding-top: 20px;
   font-size: 30px;
   color: #AC8F5D;
 }
 
-/* line 819, ../sass/parimisaccueil.scss */
+/* line 818, ../sass/parimisaccueil.scss */
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -1281,13 +1280,13 @@ footer i {
 }
 
 /* Hide the images by default */
-/* line 827, ../sass/parimisaccueil.scss */
+/* line 826, ../sass/parimisaccueil.scss */
 .mySlides {
   display: none;
 }
 
 /* Next & previous buttons */
-/* line 831, ../sass/parimisaccueil.scss */
+/* line 830, ../sass/parimisaccueil.scss */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -1303,25 +1302,25 @@ footer i {
 }
 
 /* Position the "next button" to the right */
-/* line 845, ../sass/parimisaccueil.scss */
+/* line 844, ../sass/parimisaccueil.scss */
 .prev {
   left: 0;
 }
 
-/* line 848, ../sass/parimisaccueil.scss */
+/* line 847, ../sass/parimisaccueil.scss */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-/* line 853, ../sass/parimisaccueil.scss */
+/* line 852, ../sass/parimisaccueil.scss */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* The dots/bullets/indicators */
-/* line 858, ../sass/parimisaccueil.scss */
+/* line 857, ../sass/parimisaccueil.scss */
 .divdot {
   position: absolute;
   bottom: 20px;
@@ -1329,7 +1328,7 @@ footer i {
   transform: translateX(-50%);
 }
 
-/* line 864, ../sass/parimisaccueil.scss */
+/* line 863, ../sass/parimisaccueil.scss */
 .dot {
   cursor: pointer;
   height: 20px;
@@ -1341,13 +1340,13 @@ footer i {
   transition: background-color 0.6s ease;
 }
 
-/* line 874, ../sass/parimisaccueil.scss */
+/* line 873, ../sass/parimisaccueil.scss */
 .active, .dot:hover {
   background-color: #ae8f60;
 }
 
 /* Fading animation */
-/* line 878, ../sass/parimisaccueil.scss */
+/* line 877, ../sass/parimisaccueil.scss */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -1371,7 +1370,7 @@ footer i {
     opacity: 1;
   }
 }
-/* line 892, ../sass/parimisaccueil.scss */
+/* line 891, ../sass/parimisaccueil.scss */
 .slide {
   position: absolute;
   top: 0;
@@ -1383,42 +1382,42 @@ footer i {
   width: 100%;
 }
 
-/* line 902, ../sass/parimisaccueil.scss */
+/* line 901, ../sass/parimisaccueil.scss */
 .chambre1 {
   background-image: url("../img/chambre/chambre1.jpg");
 }
 
-/* line 905, ../sass/parimisaccueil.scss */
+/* line 904, ../sass/parimisaccueil.scss */
 .chambre2 {
   background-image: url("../img/chambre/chambre2.jpg");
 }
 
-/* line 908, ../sass/parimisaccueil.scss */
+/* line 907, ../sass/parimisaccueil.scss */
 .chambre3 {
   background-image: url("../img/chambre/chambre3.jpg");
 }
 
-/* line 911, ../sass/parimisaccueil.scss */
+/* line 910, ../sass/parimisaccueil.scss */
 .chambre4 {
   background-image: url("../img/chambre/chambre4.jpg");
 }
 
-/* line 915, ../sass/parimisaccueil.scss */
+/* line 914, ../sass/parimisaccueil.scss */
 .spa1 {
   background-image: url("../img/spa/spa.jpg");
 }
 
-/* line 918, ../sass/parimisaccueil.scss */
+/* line 917, ../sass/parimisaccueil.scss */
 .spa2 {
   background-image: url("../img/spa/spaslide2.jpg");
 }
 
-/* line 921, ../sass/parimisaccueil.scss */
+/* line 920, ../sass/parimisaccueil.scss */
 .spa3 {
   background-image: url("../img/spa/spaslide3.jpg");
 }
 
-/* line 928, ../sass/parimisaccueil.scss */
+/* line 927, ../sass/parimisaccueil.scss */
 .mentionslegale {
   border-top: 15px solid #313A3D;
   border-bottom: 15px solid #313A3D;
@@ -1426,29 +1425,29 @@ footer i {
   padding: 30px 0;
   text-align: center;
 }
-/* line 934, ../sass/parimisaccueil.scss */
+/* line 933, ../sass/parimisaccueil.scss */
 .mentionslegale a {
   text-decoration: underline;
   color: black;
 }
-/* line 938, ../sass/parimisaccueil.scss */
+/* line 937, ../sass/parimisaccueil.scss */
 .mentionslegale p {
   line-height: 1.5em;
   padding: 10px;
 }
-/* line 943, ../sass/parimisaccueil.scss */
+/* line 942, ../sass/parimisaccueil.scss */
 .mentionslegale h3 {
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  /* line 928, ../sass/parimisaccueil.scss */
+  /* line 927, ../sass/parimisaccueil.scss */
   .mentionslegale {
     width: 80%;
     margin: 70px auto;
   }
 }
 
-/* line 951, ../sass/parimisaccueil.scss */
+/* line 950, ../sass/parimisaccueil.scss */
 .separateur {
   display: inline-block;
   width: 30%;
@@ -1457,43 +1456,43 @@ footer i {
   background: #ae8f60;
 }
 
-/* line 960, ../sass/parimisaccueil.scss */
+/* line 959, ../sass/parimisaccueil.scss */
 .plandusite {
   margin: 50px 10px;
   padding: 30px 0;
   text-align: center;
 }
-/* line 964, ../sass/parimisaccueil.scss */
+/* line 963, ../sass/parimisaccueil.scss */
 .plandusite a {
   text-decoration: none;
   color: black;
 }
-/* line 968, ../sass/parimisaccueil.scss */
+/* line 967, ../sass/parimisaccueil.scss */
 .plandusite a:hover {
   color: #ae8f60;
 }
-/* line 971, ../sass/parimisaccueil.scss */
+/* line 970, ../sass/parimisaccueil.scss */
 .plandusite ul {
   list-style: none;
 }
-/* line 974, ../sass/parimisaccueil.scss */
+/* line 973, ../sass/parimisaccueil.scss */
 .plandusite li {
   line-height: 1em;
   padding: 10px;
 }
-/* line 979, ../sass/parimisaccueil.scss */
+/* line 978, ../sass/parimisaccueil.scss */
 .plandusite h3 {
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  /* line 960, ../sass/parimisaccueil.scss */
+  /* line 959, ../sass/parimisaccueil.scss */
   .plandusite {
     width: 80%;
     margin: 50px auto;
   }
 }
 
-/* line 987, ../sass/parimisaccueil.scss */
+/* line 986, ../sass/parimisaccueil.scss */
 .separateur {
   display: inline-block;
   width: 20%;
@@ -1502,7 +1501,7 @@ footer i {
   background: #ae8f60;
 }
 
-/* line 996, ../sass/parimisaccueil.scss */
+/* line 995, ../sass/parimisaccueil.scss */
 #formulaire {
   width: 100%;
   color: #B6B6B6;
@@ -1516,36 +1515,36 @@ footer i {
   padding: 50px 0 110px;
   max-width: 1100px;
 }
-/* line 1008, ../sass/parimisaccueil.scss */
+/* line 1007, ../sass/parimisaccueil.scss */
 #formulaire h6 {
   margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
-  /* line 996, ../sass/parimisaccueil.scss */
+  /* line 995, ../sass/parimisaccueil.scss */
   #formulaire {
     width: 80%;
   }
 }
 
-/* line 1015, ../sass/parimisaccueil.scss */
+/* line 1014, ../sass/parimisaccueil.scss */
 body #formulaire h2 {
   color: #313A3D;
   font-weight: 100;
 }
 
-/* line 1020, ../sass/parimisaccueil.scss */
+/* line 1019, ../sass/parimisaccueil.scss */
 form {
   width: 80%;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
-  /* line 1020, ../sass/parimisaccueil.scss */
+  /* line 1019, ../sass/parimisaccueil.scss */
   form {
     width: 58.3333333333%;
   }
 }
 
-/* line 1027, ../sass/parimisaccueil.scss */
+/* line 1026, ../sass/parimisaccueil.scss */
 .required::after {
   content: '*';
   position: absolute;
@@ -1555,20 +1554,20 @@ form {
   font-size: 25px;
 }
 
-/* line 1035, ../sass/parimisaccueil.scss */
+/* line 1034, ../sass/parimisaccueil.scss */
 form .field {
   width: 100%;
   position: relative;
   margin-bottom: 30px;
 }
 
-/* line 1040, ../sass/parimisaccueil.scss */
+/* line 1039, ../sass/parimisaccueil.scss */
 form .fielddate {
   width: 100%;
   float: left;
 }
 @media screen and (min-width: 768px) {
-  /* line 1040, ../sass/parimisaccueil.scss */
+  /* line 1039, ../sass/parimisaccueil.scss */
   form .fielddate {
     width: 46.66667%;
     float: left;
@@ -1576,19 +1575,19 @@ form .fielddate {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1046, ../sass/parimisaccueil.scss */
+  /* line 1045, ../sass/parimisaccueil.scss */
   form .depart {
     margin-left: 6.66667%;
   }
 }
 
-/* line 1051, ../sass/parimisaccueil.scss */
+/* line 1050, ../sass/parimisaccueil.scss */
 form .field i {
   font-size: 1.45em;
   display: none;
 }
 
-/* line 1055, ../sass/parimisaccueil.scss */
+/* line 1054, ../sass/parimisaccueil.scss */
 form .field label p {
   overflow: hidden;
   margin: 0 auto;
@@ -1598,7 +1597,7 @@ form .field label p {
   height: 100%;
 }
 
-/* line 1063, ../sass/parimisaccueil.scss */
+/* line 1062, ../sass/parimisaccueil.scss */
 form .field label {
   text-transform: uppercase;
   position: absolute;
@@ -1618,7 +1617,7 @@ form .field label {
   transition: all 333ms ease-in-out;
 }
 
-/* line 1081, ../sass/parimisaccueil.scss */
+/* line 1080, ../sass/parimisaccueil.scss */
 form .field input[type="text"],
 form .field textarea {
   border: none;
@@ -1632,7 +1631,7 @@ form .field textarea {
   letter-spacing: 0.05em;
 }
 
-/* line 1094, ../sass/parimisaccueil.scss */
+/* line 1093, ../sass/parimisaccueil.scss */
 form .field input[type="file"],
 form .field textarea {
   border: none;
@@ -1646,7 +1645,7 @@ form .field textarea {
   letter-spacing: 0.05em;
 }
 
-/* line 1106, ../sass/parimisaccueil.scss */
+/* line 1105, ../sass/parimisaccueil.scss */
 form .field select {
   border: none;
   background: #E8E9EA;
@@ -1660,7 +1659,7 @@ form .field select {
   text-transform: uppercase;
 }
 
-/* line 1119, ../sass/parimisaccueil.scss */
+/* line 1118, ../sass/parimisaccueil.scss */
 form .field input[type="text"]#msg,
 form .field textarea#msg {
   height: 100%;
@@ -1672,7 +1671,7 @@ form .field textarea#msg {
   transition: all 333ms ease-in-out;
 }
 
-/* line 1129, ../sass/parimisaccueil.scss */
+/* line 1128, ../sass/parimisaccueil.scss */
 form .field input[type="text"]:focus, form .field input[type="text"].focused,
 form .field textarea:focus,
 form .field textarea.focused,
@@ -1681,12 +1680,12 @@ form .field select.focused {
   outline: none;
 }
 
-/* line 1136, ../sass/parimisaccueil.scss */
+/* line 1135, ../sass/parimisaccueil.scss */
 #msg.msgselected {
   padding-bottom: 150px;
 }
 
-/* line 1139, ../sass/parimisaccueil.scss */
+/* line 1138, ../sass/parimisaccueil.scss */
 form .field label.labelselected {
   width: 18%;
   padding: 18px 0;
@@ -1694,18 +1693,18 @@ form .field label.labelselected {
   color: #313A3D;
 }
 
-/* line 1145, ../sass/parimisaccueil.scss */
+/* line 1144, ../sass/parimisaccueil.scss */
 form .field label.labelselected p {
   display: none;
 }
 
-/* line 1149, ../sass/parimisaccueil.scss */
+/* line 1148, ../sass/parimisaccueil.scss */
 form .field label.labelselected i {
   display: block;
   font-size: 1.45em;
 }
 
-/* line 1153, ../sass/parimisaccueil.scss */
+/* line 1152, ../sass/parimisaccueil.scss */
 #formulaire form input[type="submit"] {
   background: #ae8f60;
   color: white;
@@ -1726,7 +1725,7 @@ form .field label.labelselected i {
   transition: all 333ms ease-in-out;
 }
 
-/* line 1172, ../sass/parimisaccueil.scss */
+/* line 1171, ../sass/parimisaccueil.scss */
 #formulaire form input[type="submit"]:hover {
   background-image: url("../img/rezo.jpg");
   background-repeat: no-repeat;
@@ -1735,13 +1734,13 @@ form .field label.labelselected i {
   color: #ae8f60;
 }
 
-/* line 1179, ../sass/parimisaccueil.scss */
+/* line 1178, ../sass/parimisaccueil.scss */
 #formulaire form input[type="submit"]:focus {
   outline: none;
   background: #ae8f60;
 }
 
-/* line 1185, ../sass/parimisaccueil.scss */
+/* line 1184, ../sass/parimisaccueil.scss */
 .resa {
   background-image: url("../img/img/bgbase.jpg");
   background-repeat: no-repeat;
@@ -1749,12 +1748,12 @@ form .field label.labelselected i {
   background-size: cover;
 }
 
-/* line 1192, ../sass/parimisaccueil.scss */
+/* line 1191, ../sass/parimisaccueil.scss */
 .resa #formulaire {
   margin: 60px auto 25px;
 }
 
-/* line 1197, ../sass/parimisaccueil.scss */
+/* line 1196, ../sass/parimisaccueil.scss */
 .tabContainer {
   width: 100%;
   background-image: url("../img/pattern.jpg");
@@ -1768,13 +1767,13 @@ form .field label.labelselected i {
   max-width: 1100px;
 }
 
-/* line 1209, ../sass/parimisaccueil.scss */
+/* line 1208, ../sass/parimisaccueil.scss */
 .buttonContainer {
   height: 60px;
   width: 80%;
   margin: 0 auto;
 }
-/* line 1213, ../sass/parimisaccueil.scss */
+/* line 1212, ../sass/parimisaccueil.scss */
 .buttonContainer button {
   width: 100%;
   float: left;
@@ -1794,26 +1793,26 @@ form .field label.labelselected i {
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
-  /* line 1213, ../sass/parimisaccueil.scss */
+  /* line 1212, ../sass/parimisaccueil.scss */
   .buttonContainer button {
     width: 50%;
     float: left;
   }
 }
 @media (min-width: 1024px) {
-  /* line 1213, ../sass/parimisaccueil.scss */
+  /* line 1212, ../sass/parimisaccueil.scss */
   .buttonContainer button {
     width: 25%;
     float: left;
   }
 }
-/* line 1235, ../sass/parimisaccueil.scss */
+/* line 1234, ../sass/parimisaccueil.scss */
 .buttonContainer button:hover {
   background: #ae8f60;
   color: white;
 }
 
-/* line 1241, ../sass/parimisaccueil.scss */
+/* line 1240, ../sass/parimisaccueil.scss */
 .tabPanel {
   background: #ae8f60;
   color: white;
@@ -1822,7 +1821,7 @@ form .field label.labelselected i {
   padding: 20px 0;
   display: none;
 }
-/* line 1248, ../sass/parimisaccueil.scss */
+/* line 1247, ../sass/parimisaccueil.scss */
 .tabPanel .avis {
   width: 80%;
   margin: 20px auto;
@@ -1830,31 +1829,31 @@ form .field label.labelselected i {
   color: #313A3D;
   box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
 }
-/* line 1254, ../sass/parimisaccueil.scss */
+/* line 1253, ../sass/parimisaccueil.scss */
 .tabPanel .avis p {
   width: 100%;
   padding: 5px 10px;
   line-height: 1.2em;
 }
-/* line 1259, ../sass/parimisaccueil.scss */
+/* line 1258, ../sass/parimisaccueil.scss */
 .tabPanel .avis .name, .tabPanel .avis .note {
   text-align: left;
 }
-/* line 1262, ../sass/parimisaccueil.scss */
+/* line 1261, ../sass/parimisaccueil.scss */
 .tabPanel .avis .note {
   padding-top: 0;
 }
-/* line 1265, ../sass/parimisaccueil.scss */
+/* line 1264, ../sass/parimisaccueil.scss */
 .tabPanel .avis .citation {
   font-style: italic;
   padding: 10px;
 }
-/* line 1269, ../sass/parimisaccueil.scss */
+/* line 1268, ../sass/parimisaccueil.scss */
 .tabPanel .avis .dateavis {
   text-align: right;
 }
 
-/* line 1275, ../sass/parimisaccueil.scss */
+/* line 1274, ../sass/parimisaccueil.scss */
 .pressecontainer {
   border-top: 15px solid #313A3D;
   border-bottom: 15px solid #313A3D;
@@ -1863,82 +1862,82 @@ form .field label.labelselected i {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 1284, ../sass/parimisaccueil.scss */
+/* line 1283, ../sass/parimisaccueil.scss */
 .pressecontainer a {
   text-decoration: none;
 }
-/* line 1287, ../sass/parimisaccueil.scss */
+/* line 1286, ../sass/parimisaccueil.scss */
 .pressecontainer p {
   line-height: 1em;
   color: #313A3D;
 }
 @media (min-width: 768px) {
-  /* line 1275, ../sass/parimisaccueil.scss */
+  /* line 1274, ../sass/parimisaccueil.scss */
   .pressecontainer {
     width: 735px;
   }
 }
 @media (min-width: 1024px) {
-  /* line 1275, ../sass/parimisaccueil.scss */
+  /* line 1274, ../sass/parimisaccueil.scss */
   .pressecontainer {
     width: 955px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1275, ../sass/parimisaccueil.scss */
+  /* line 1274, ../sass/parimisaccueil.scss */
   .pressecontainer {
     width: 1155px;
   }
 }
-/* line 1300, ../sass/parimisaccueil.scss */
+/* line 1299, ../sass/parimisaccueil.scss */
 .pressecontainer .Itempresse {
   width: 100%;
   float: left;
   padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  /* line 1300, ../sass/parimisaccueil.scss */
+  /* line 1299, ../sass/parimisaccueil.scss */
   .pressecontainer .Itempresse {
     width: 50%;
     float: left;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 1300, ../sass/parimisaccueil.scss */
+  /* line 1299, ../sass/parimisaccueil.scss */
   .pressecontainer .Itempresse {
     width: 33.33333%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  /* line 1300, ../sass/parimisaccueil.scss */
+  /* line 1299, ../sass/parimisaccueil.scss */
   .pressecontainer .Itempresse {
     width: 25%;
     float: left;
   }
 }
 
-/* line 1319, ../sass/parimisaccueil.scss */
+/* line 1318, ../sass/parimisaccueil.scss */
 .carteContainer {
   width: 100%;
   float: left;
 }
 @media screen and (min-width: 768px) {
-  /* line 1319, ../sass/parimisaccueil.scss */
+  /* line 1318, ../sass/parimisaccueil.scss */
   .carteContainer {
     width: 50%;
     float: left;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 1319, ../sass/parimisaccueil.scss */
+  /* line 1318, ../sass/parimisaccueil.scss */
   .carteContainer {
     width: 50%;
     float: left;
   }
 }
 
-/* line 1329, ../sass/parimisaccueil.scss */
+/* line 1328, ../sass/parimisaccueil.scss */
 .carte {
   width: 80%;
   margin: 30px auto;
@@ -1951,27 +1950,27 @@ form .field label.labelselected i {
   transition: all .1s ease-in;
 }
 
-/* line 1341, ../sass/parimisaccueil.scss */
+/* line 1340, ../sass/parimisaccueil.scss */
 .carte article {
   padding: 20px;
   background: white;
 }
 
-/* line 1345, ../sass/parimisaccueil.scss */
+/* line 1344, ../sass/parimisaccueil.scss */
 .carte h3 {
   text-align: left;
   color: #333;
   font-size: 20px;
 }
 
-/* line 1350, ../sass/parimisaccueil.scss */
+/* line 1349, ../sass/parimisaccueil.scss */
 .carte p {
   width: 80%;
   padding: 20px 0;
   line-height: 1.5;
 }
 
-/* line 1355, ../sass/parimisaccueil.scss */
+/* line 1354, ../sass/parimisaccueil.scss */
 .carteDate {
   position: absolute;
   top: 20px;
@@ -1986,19 +1985,19 @@ form .field label.labelselected i {
   background-color: #ae8f60;
   border-radius: 50%;
 }
-/* line 1368, ../sass/parimisaccueil.scss */
+/* line 1367, ../sass/parimisaccueil.scss */
 .carteDate .jour {
   display: block;
   font-size: 14px;
 }
-/* line 1372, ../sass/parimisaccueil.scss */
+/* line 1371, ../sass/parimisaccueil.scss */
 .carteDate .mois {
   display: block;
   font-size: 10px;
   text-transform: uppercase;
 }
 
-/* line 1378, ../sass/parimisaccueil.scss */
+/* line 1377, ../sass/parimisaccueil.scss */
 .carte .vignette {
   /*background-color: whitesmoke;*/
   padding-top: 60%;
@@ -2006,13 +2005,13 @@ form .field label.labelselected i {
   background-position: center center;
 }
 
-/* line 1384, ../sass/parimisaccueil.scss */
+/* line 1383, ../sass/parimisaccueil.scss */
 .carte:hover {
   top: -2px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* line 1390, ../sass/parimisaccueil.scss */
+/* line 1389, ../sass/parimisaccueil.scss */
 .conteneurIframe {
   position: relative;
   width: 80%;
@@ -2020,7 +2019,7 @@ form .field label.labelselected i {
   margin-bottom: 40px;
   height: 500px;
 }
-/* line 1396, ../sass/parimisaccueil.scss */
+/* line 1395, ../sass/parimisaccueil.scss */
 .conteneurIframe iframe {
   position: absolute;
   top: 0;
