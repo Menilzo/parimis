@@ -6,42 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../stylesheets/normalize.css">
   <link rel="stylesheet" href="../stylesheets/parimisaccueil.css">
+  <link rel="stylesheet" href="../stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" href="../stylesheets/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="../stylesheets/jquery-ui.theme.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="../js/midnight.jquery.min.js"></script>
   <script src="../js/jquery.fadethis.js"></script>
   <title>Le Restaurant</title>
-  <script>
-  $(document).ready(function(){
 
-   //SCRIPT MENU HAMBURGER
-    $('.menubouton').click(function(){
-      $('.menu').toggleClass('active');
-      $('.menubouton').toggleClass('toggle');
-    });
-
-   //SCRIPT OVERLAY RESERVATION
-    $('.book').click(function(){
-      $('.overlaybooking').toggleClass('open');
-    });
-
-   $('.close').click(function(){
-     $('.overlaybooking').toggleClass('open');
-   });
-
-
-    //SCRIPT FADE THIS
-    $('.Itemlegende').fadeThis({"reverse": false});
-    $('.Itemimage').fadeThis()
-    $('.ItemlegendeInverse').fadeThis({"reverse": false});
-    $('.Itemimage').fadeThis()
-
-  });
-  </script>
 </head>
 
 <body>
 
+  <header>
     <!-- Nav -->
     <nav class="navfixed">
       <div class="navgauche">
@@ -49,14 +26,15 @@
           <div><a href="lerestaurant.html">Le Restaurant</a></div>
       </div>
       <div class="logo">
-        Parimis
+        <a href="../../index.html#top">Parimis</a>
       </div>
       <div class="navdroite">
           <div><a href="lespa.html">Le Spa</a></div>
-          <div><a href="#">Contact</a></div>
+          <div><a href="contact.html">Contact</a></div>
       </div>
     </nav>
     <!-- Fin Nav -->
+
     <!--Menu Hamburger -->
     <div class="menu">
       <ul>
@@ -64,66 +42,49 @@
         <li><a href="leschambres.html">Les chambres</a></li>
         <li><a href="lerestaurant.html">Le restaurant</a></li>
         <li><a href="lespa.html">Le Spa</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <!-- RECHERCHE RAPIDE-->
+        <li>
+          <span class="recherche"><i class="fas fa-search"></i>Recherche Rapide</span>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Que recherchez vous?">
+          </form>
+        </li>
+
       </ul>
       <button class="menubouton" type="button" name="button">
         <span></span>
       </button>
     </div>
-  <!-- Fin Menu Hamburger -->
+    <!-- Fin Menu Hamburger -->
 
 
-  <!-- Overlay Réservation -->
-  <div class="reserver">
-    <a class="book" href="#">
-      <i class="far fa-calendar-alt"></i>
-      <span>Réserver</span>
-    </a>
-  </div>
-  <div class="overlaybooking">
-        <div class="close" title="Fermer">
-          <span></span>
-        </div>
+    <!-- Overlay Réservation -->
+    <div class="reserver">
+      <a class="book" href="#">
+        <i class="far fa-calendar-alt"></i>
+        <span>Réserver</span>
+      </a>
+    </div>
+    <div class="overlaybooking">
+      <div class="close" title="Fermer">
+        <span></span>
+      </div>
       <section class="reserver">
         <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="date" name="datearrive" ></input> ,</p><br/>
-        <p>jusqu'au <input type="date" name="date départ"></input></p><br/>
+        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" ></input> ,</p><br/>
+        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
         <input type="submit" name="" value="Réserver">
-        <ul class="dropdown-select nights">
-          <li><a href="/" data-label="1 nuit" data-value="1" data-class="nights">1 nuit</a></li>
-          <li><a href="/" data-label="2 nuits" data-value="2" data-class="nights">2 nuits</a></li>
-          <li><a href="/" data-label="3 nuits" data-value="3" data-class="nights">3 nuits</a></li>
-          <li><a href="/" data-label="4 nuits" data-value="4" data-class="nights">4 nuits</a></li>
-          <li><a href="/" data-label="5 nuits" data-value="5" data-class="nights">5 nuits</a></li>
-          <li><a href="/" data-label="6 nuits" data-value="6" data-class="nights">6 nuits</a></li>
-          <li><a href="/" data-label="7 nuits" data-value="7" data-class="nights">7 nuits</a></li>
-          <li><a href="/" data-label="8 nuits" data-value="8" data-class="nights">8 nuits</a></li>
-          <li><a href="/" data-label="9 nuits" data-value="9" data-class="nights">9 nuits</a></li>
-          <li><a href="/" data-label="10 nuits" data-value="10" data-class="nights">10 nuits</a></li>
-          <li><a href="/" data-label="11 nuits" data-value="11" data-class="nights">11 nuits</a></li>
-          <li><a href="/" data-label="12 nuits" data-value="12" data-class="nights">12 	nuits</a></li>
-          <li><a href="/" data-label="13 nuits" data-value="13" data-class="nights">13 nuits</a></li>
-          <li><a href="/" data-label="14 nuits" data-value="14" data-class="nights">14 nuits</a></li>
-          <li><a href="/" data-label="15 nuits" data-value="15" data-class="nights">15 nuits</a></li>
-          <li><a href="/" data-label="16 nuits" data-value="16" data-class="nights">16 nuits</a></li>
-          <li><a href="/" data-label="17 nuits" data-value="17" data-class="nights">17 nuits</a></li>
-          <li><a href="/" data-label="18 nuits" data-value="18" data-class="nights">18 nuits</a></li>
-          <li><a href="/" data-label="19 nuits" data-value="19" data-class="nights">19 nuits</a></li>
-          <li><a href="/" data-label="20 nuits" data-value="20" data-class="nights">20 nuits</a></li>
-          <li><a href="/" data-label="21 nuits" data-value="21" data-class="nights">21 nuits</a></li>
-          <li><a href="/" data-label="22 nuits" data-value="22" data-class="nights">22 nuits</a></li>
-          <li><a href="/" data-label="23 nuits" data-value="23" data-class="nights">23 nuits</a></li>
-          <li><a href="/" data-label="24 nuits" data-value="24" data-class="nights">24 nuits</a></li>
-          <li><a href="/" data-label="25 nuits" data-value="25" data-class="nights">25 nuits</a></li>
-          <li><a href="/" data-label="26 nuits" data-value="26" data-class="nights">26 nuits</a></li>
-          <li><a href="/" data-label="27 nuits" data-value="27" data-class="nights">27 nuits</a></li>
-          <li><a href="/" data-label="28 nuits" data-value="28" data-class="nights">28 nuits</a></li>
-          <li><a href="/" data-label="29 nuits" data-value="29" data-class="nights">29 nuits</a></li>
-          <li><a href="/" data-label="30 nuits" data-value="30" data-class="nights">30 nuits</a></li>
-        </ul>
-    </section>
-  </div>
-  <!-- Fin Overlay Réservation -->
+      </section>
+    </div>
+    <!-- Fin Overlay Réservation -->
+
+    <!-- BOUTON LANGUE -->
+    <div class="langue">
+      <div>FR</div>
+      <div>EN</div>
+    </div>
   </header>
 
 
@@ -132,19 +93,23 @@
 
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="../img/rooftop.jpg" style="width:100%">
+        <div class="slide"></div>
+        <!-- <img src="../img/rooftop.jpg" style="width:100%"> -->
       </div>
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="../img/rooftop.jpg" style="width:100%">
-    </div>
+      <div class="mySlides fade">
+        <div class="slide">
 
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="../img/rooftop.jpg" style="width:100%">
-    </div>
+        </div>
+        <!-- <img src="../img/rooftop.jpg" style="width:100%"> -->
+      </div>
+
+      <div class="mySlides fade">
+        <div class="slide">
+
+        </div>
+        <!-- <img src="../img/rooftop.jpg" style="width:100%"> -->
+      </div>
 
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -158,6 +123,7 @@
     </div>
   </div>
     <section class="hotel" data-midnight="navblack">
+      <div class="spriteResto"></div>
       <h4>Le Goût</h4>
       <h2>Le Restaurant</h2>
       <div class="hotelpara ">
@@ -168,34 +134,34 @@
     <section class="resto pageresto" data-midnight="navblack">
       <h2>Nos Cartes</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsa. Tempore culpa nesciunt modi explicabo mollitia eos cum sunt doloremque. Quas excepturi sunt, magni vero ex, vitae optio tempora rerum sequi eaque et eveniet dolorem quos ratione iste obcaecati fugiat possimus ullam fuga quae perferendis nostrum numquam debitis vel. Aperiam.</p>
-      <div class="Item">
+      <div class="Item" id="menubrasserie">
         <div class="Itemimage">
           <img src="http://placehold.it/750x750" alt="">
         </div>
         <div class="Itemlegende slide-right">
           <h3>Carte Brasserie</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="carte">Voir nos cartes</h3>
+          <h3 class="voirPlus">Voir nos cartes</h3>
         </div>
       </div>
-      <div class="Item">
+      <div class="Item" id="menudegustation">
         <div class="ItemimageInverse">
           <img src="http://placehold.it/750x750" alt="">
         </div>
         <div class="ItemlegendeInverse slide-left">
           <h3>Carte dégustation</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="carte">Voir nos cartes</h3>
+          <h3 class="voirPlus">Voir nos cartes</h3>
         </div>
       </div>
-      <div class="Item">
+      <div class="Item" id="menurestaurant">
         <div class="Itemimage">
           <img src="http://placehold.it/750x750" alt="">
         </div>
         <div class="Itemlegende slide-right">
           <h3>Carte Restaurant</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="carte">Voir nos cartes</h3>
+          <h3 class="voirPlus">Voir nos cartes</h3>
         </div>
       </div>
     </section>
@@ -214,31 +180,31 @@
         </p>
         <p><strong>Réservation</strong> par téléphone au :<br />
                                         01 43 20 96 30<br />
-                                        ou <a href="#">ici</a> </p>
+                                        ou <a href="reservation.html">ici</a> </p>
       </div>
     </section>
   </div>
     <footer>
       <div class="rezo">
         <div class="mediafooter">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <p>Rejoignez nous</p>
           <p>
-            <a href="#">Facebook</a>
+            <a href="http://facebook.com" target="_blank">Facebook</a>
           </p>
         </div>
         <div class="mediafooter">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
           <p>Gallerie</p>
           <p>
-            <a href="#">Instagram</a>
+            <a href="http://instagram.com" target="_blank">Instagram</a>
           </p>
         </div>
         <div class="mediafooter">
-          <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          <a href="http://tripadvisor.com" target="_blank"><i class="fab fa-tripadvisor"></i></a>
           <p>Réserver</p>
           <p>
-            <a href="#">TripAdvisor</a>
+            <a href="http://tripadvisor.com" target="_blank">TripAdvisor</a>
           </p>
         </div>
         <div class="mediafooter">
@@ -269,39 +235,12 @@
       </div>
     </footer>
 
-
-
-      <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsvUG1Zn0rs4jZuQDo8-abFofn_7jhVqY&callback=initMap"
-      async defer>
-    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsvUG1Zn0rs4jZuQDo8-abFofn_7jhVqY&callback=initMap"
+  async defer>
+  </script>
   <script src="../js/map.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

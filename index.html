@@ -6,45 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="parimis/stylesheets/normalize.css">
   <link rel="stylesheet" href="parimis/stylesheets/parimisaccueil.css">
+  <link rel="stylesheet" href="parimis/stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" href="parimis/stylesheets/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="parimis/stylesheets/jquery-ui.theme.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="parimis/js/midnight.jquery.min.js"></script>
   <script src="parimis/js/jquery.fadethis.js"></script>
   <title>Parimis 5*</title>
-  <script type="text/javascript">
-     $(document).ready(function(){
-
-      //SCRIPT MENU HAMBURGER
-       $('.menubouton').click(function(){
-         $('.menu').toggleClass('active');
-         $('.menubouton').toggleClass('toggle');
-       });
-
-       $('.recherche').click(function(){
-         $(this).find('form').toggle();
-       });
-      //SCRIPT OVERLAY RESERVATION
-       $('.book').click(function(){
-         $('.overlaybooking').toggleClass('open');
-       });
-
-      $('.close').click(function(){
-        $('.overlaybooking').toggleClass('open');
-      });
-
-
-       //SCRIPT FADE THIS
-       $('.restoLegende').fadeThis({"reverse": false});
-       $('.restoImage').fadeThis()
-
-        //SCRIPT OVERLAY GAMMES CHAMBRE
-        $('.chambreItem').click(function(){
-          $(this).find('.overlay').toggleClass('overlaytoggle');
-          $(this).find('.titrerotation').toggleClass('titrerotationselected');
-          $(this).find('.plus').toggleClass('plusclique');
-        });
-     });
-  </script>
 </head>
 <body>
 
@@ -56,11 +24,11 @@
           <div><a href="parimis/pages/lerestaurant.html">Le Restaurant</a></div>
       </div>
       <div class="logo">
-        Parimis
+        <a href="#top">Parimis</a>  
       </div>
       <div class="navdroite">
           <div><a href="parimis/pages/lespa.html">Le Spa</a></div>
-          <div><a href="#">Contact</a></div>
+          <div><a href="parimis/pages/contact.html">Contact</a></div>
       </div>
     </nav>
     <!-- Fin Nav -->
@@ -76,11 +44,11 @@
     <!--Menu Hamburger -->
     <div class="menu">
       <ul>
-        <li><a href="#">Accueil</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="parimis/pages/leschambres.html">Les chambres</a></li>
         <li><a href="parimis/pages/lerestaurant.html">Le restaurant</a></li>
         <li><a href="parimis/pages/lespa.html">Le Spa</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="parimis/pages/contact.html">Contact</a></li>
 
         <!-- RECHERCHE RAPIDE-->
         <li>
@@ -100,7 +68,7 @@
 
     <!-- Overlay Réservation -->
     <div class="reserver">
-      <a class="book" href="#">
+      <a class="book" ="#">
         <i class="far fa-calendar-alt"></i>
         <span>Réserver</span>
       </a>
@@ -110,42 +78,10 @@
         <span></span>
       </div>
       <section class="reserver">
-        <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="date" name="datearrive" ></input> ,</p><br/>
-        <p>jusqu'au <input type="date" name="date départ"></input></p><br/>
+        <h2>Cher Parimis,</h2><br/>
+        <p>J'aimerais réserver une chambre du <input type="text" name="datearrive" class="datepicker" ></input> ,</p><br/>
+        <p>jusqu'au <input type="text" name="datedepart" class="datepicker" ></input></p><br/>
         <input type="submit" name="" value="Réserver">
-        <ul class="dropdown-select nights">
-          <li><a href="/" data-label="1 nuit" data-value="1" data-class="nights">1 nuit</a></li>
-          <li><a href="/" data-label="2 nuits" data-value="2" data-class="nights">2 nuits</a></li>
-          <li><a href="/" data-label="3 nuits" data-value="3" data-class="nights">3 nuits</a></li>
-          <li><a href="/" data-label="4 nuits" data-value="4" data-class="nights">4 nuits</a></li>
-          <li><a href="/" data-label="5 nuits" data-value="5" data-class="nights">5 nuits</a></li>
-          <li><a href="/" data-label="6 nuits" data-value="6" data-class="nights">6 nuits</a></li>
-          <li><a href="/" data-label="7 nuits" data-value="7" data-class="nights">7 nuits</a></li>
-          <li><a href="/" data-label="8 nuits" data-value="8" data-class="nights">8 nuits</a></li>
-          <li><a href="/" data-label="9 nuits" data-value="9" data-class="nights">9 nuits</a></li>
-          <li><a href="/" data-label="10 nuits" data-value="10" data-class="nights">10 nuits</a></li>
-          <li><a href="/" data-label="11 nuits" data-value="11" data-class="nights">11 nuits</a></li>
-          <li><a href="/" data-label="12 nuits" data-value="12" data-class="nights">12 	nuits</a></li>
-          <li><a href="/" data-label="13 nuits" data-value="13" data-class="nights">13 nuits</a></li>
-          <li><a href="/" data-label="14 nuits" data-value="14" data-class="nights">14 nuits</a></li>
-          <li><a href="/" data-label="15 nuits" data-value="15" data-class="nights">15 nuits</a></li>
-          <li><a href="/" data-label="16 nuits" data-value="16" data-class="nights">16 nuits</a></li>
-          <li><a href="/" data-label="17 nuits" data-value="17" data-class="nights">17 nuits</a></li>
-          <li><a href="/" data-label="18 nuits" data-value="18" data-class="nights">18 nuits</a></li>
-          <li><a href="/" data-label="19 nuits" data-value="19" data-class="nights">19 nuits</a></li>
-          <li><a href="/" data-label="20 nuits" data-value="20" data-class="nights">20 nuits</a></li>
-          <li><a href="/" data-label="21 nuits" data-value="21" data-class="nights">21 nuits</a></li>
-          <li><a href="/" data-label="22 nuits" data-value="22" data-class="nights">22 nuits</a></li>
-          <li><a href="/" data-label="23 nuits" data-value="23" data-class="nights">23 nuits</a></li>
-          <li><a href="/" data-label="24 nuits" data-value="24" data-class="nights">24 nuits</a></li>
-          <li><a href="/" data-label="25 nuits" data-value="25" data-class="nights">25 nuits</a></li>
-          <li><a href="/" data-label="26 nuits" data-value="26" data-class="nights">26 nuits</a></li>
-          <li><a href="/" data-label="27 nuits" data-value="27" data-class="nights">27 nuits</a></li>
-          <li><a href="/" data-label="28 nuits" data-value="28" data-class="nights">28 nuits</a></li>
-          <li><a href="/" data-label="29 nuits" data-value="29" data-class="nights">29 nuits</a></li>
-          <li><a href="/" data-label="30 nuits" data-value="30" data-class="nights">30 nuits</a></li>
-        </ul>
       </section>
     </div>
     <!-- Fin Overlay Réservation -->
@@ -165,7 +101,8 @@
     </div>
 
     <!-- Introduction style page de livre -->
-    <section class="hotel" data-midnight="navblack">
+    <section class="hotel" id="hotelhistoire">
+      <div class="spriteHotel"></div>
       <h4>"Notre Héritage"</h4>
       <h2>Le Luxe à la Française</h2>
       <div class="hotelpara">
@@ -175,63 +112,59 @@
     </section>
 
     <!-- Section chambre -->
-    <section class="chambre" data-midnight="navblanc">
+    <section class="chambre">
       <div class="chambreIntro">
+        <div class="spriteChambre"></div>
         <h4>"L'élégance"</h4>
         <h2>Les chambres</h2>
         <p class>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex inventore veritatis provident odit iusto veniam excepturi repellat eos corporis impedit, explicabo temporibus recusandae in incidunt natus quasi quis dolor vitae obcaecati laudantium maxime. Nihil nisi impedit blanditiis excepturi, molestiae enim accusantium quis, voluptatum consectetur iste cum nobis, maiores voluptatem amet repellendus iure sapiente, magni debitis! Mollitia expedita cupiditate necessitatibus repudiandae natus sapiente, nostrum consequatur perspiciatis minima, omnis, eligendi ipsum recusandae soluta accusamus odit minus alias.</p>
       </div>
-      <div class="roomgalery">
-      <div class="chambreItem" data-midnight="nonav">
+      <div class="chambreItem chambre1" data-midnight="nonav">
         <div class="overlay">
-          <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+          <a  class="plus" href="parimis/pages/chambreclassique.html"><img src="parimis/img/plus.svg" alt="">.</a>
         </div>
-        <img src="parimis/img/room1.jpg" alt="">
         <h3 class="titrerotation">Chambre classique</h3>
       </div>
-      <div class="chambreItem">
-        <img src="parimis/img/room1.jpg" alt="">
+      <div class="chambreItem chambre2">
         <div class="overlay">
-          <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+          <a  class="plus" href="parimis/pages/chambreconfort.html"><img src="parimis/img/plus.svg" alt="">.</a>
         </div>
         <h3 class="titrerotation">Chambre confort</h3>
       </div>
-      <div class="chambreItem">
+      <div class="chambreItem chambre3">
         <div class="overlay">
-          <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+          <a  class="plus" href="parimis/pages/chambredeluxe.html"><img src="parimis/img/plus.svg" alt="">.</a>
         </div>
-        <img src="parimis/img/room1.jpg" alt="">
         <h3 class="titrerotation">Chambres deluxe</h3>
       </div>
-      <div class="chambreItem">
+      <div class="chambreItem chambre4">
         <div class="overlay">
-          <a  class="plus" href="#"><img src="parimis/img/plus.svg" alt="">En savoir plus</a>
+          <a  class="plus" href="parimis/pages/suite.html"><img src="parimis/img/plus.svg" alt="">.</a>
         </div>
-        <img src="parimis/img/room1.jpg" alt="">
         <h3 class="titrerotation">Suites</h3>
       </div>
-    </div>
     </section>
 
     <!-- Section restaurant -->
-    <section class="resto" data-midnight="navblack">
+    <section class="resto">
+      <div class="spriteResto"></div>
       <h4>"La subtilité"</h4>
       <h2>Le restaurant</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsa. Tempore culpa nesciunt modi explicabo mollitia eos cum sunt doloremque. Quas excepturi sunt, magni vero ex, vitae optio tempora rerum sequi eaque et eveniet dolorem quos ratione iste obcaecati fugiat possimus ullam fuga quae perferendis nostrum numquam debitis vel. Aperiam.</p>
+      <p>La table et la cuisine, le cœur et le poumon de la maison. L'architecture du bâtiment a décidé des espaces intérieurs et leur aménagement a évolué avec le temps. Le style art déco font toujours honneur à la tradition française . Les 5 salles du restaurant offrent des volumes et des ambiances différents pour que chacun retrouve un brin de chez soi. L'âme de la Maison ne serait pas sans un personnel attentionné, une équipe soudée et attachée à l'esprit Parimis, encore témoin et relais de cette hospitalité qui survit de génération en génération.</p>
       <div class="Item">
         <div class="Itemimage">
           <img src="parimis/img/resto.jpg" alt="">
         </div>
         <div class="Itemlegende slide-right">
-          <h3>Produits d'exception sublimés</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="carte">Voir nos cartes</h3>
+          <h3>Le mot du chef</h3>
+          <p style="font-style:italic;">"La cuisine ne se mesure pas en terme de tradition ou de modernité. On doit y lire la tendresse du cuisinier."</p>
+          <h3 class="voirPlus"><a href="parimis/pages/lerestaurant.html">Voir nos cartes</a></h3>
         </div>
       </div>
     </section>
 
     <!-- Section spa -->
-    <section class="spa" data-midnight="navbleu">
+    <section class="spa">
       <h4>"La volupté"</h4>
       <h2>Le Spa</h2>
       <div class="soins">
@@ -248,7 +181,7 @@
     </section>
 
     <!-- Section location/ API Google + carte contact-->
-    <section class="location">
+    <section class="location" id="acces">
       <h4>"le prestige"</h4>
       <h2>Où sommes nous?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, placeat mollitia nulla incidunt rerum voluptatibus, libero accusamus earum ex reiciendis deserunt? Facere consequuntur neque magni totam adipisci maxime nihil eveniet.</p>
@@ -264,7 +197,7 @@
         </p>
         <p><strong>Réservation</strong> par téléphone au :<br />
                                         01 43 20 96 30<br />
-                                        ou <a href="#">ici</a> </p>
+                                        ou <a href="parimis/pages/reservation.html">ici</a> </p>
       </div>
     </section>
   </div>
@@ -273,24 +206,24 @@
   <footer>
     <div class="rezo">
       <div class="mediafooter">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <p>Rejoignez nous</p>
         <p>
-          <a href="#">Facebook</a>
+          <a href="http://facebook.com" target="_blank">Facebook</a>
         </p>
       </div>
       <div class="mediafooter">
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
         <p>Gallerie</p>
         <p>
-          <a href="#">Instagram</a>
+          <a href="http://instagram.com" target="_blank">Instagram</a>
         </p>
       </div>
       <div class="mediafooter">
-        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+        <a href="http://tripadvisor.com" target="_blank"><i class="fab fa-tripadvisor"></i></a>
         <p>Réserver</p>
         <p>
-          <a href="#">TripAdvisor</a>
+          <a href="http://tripadvisor.com" target="_blank">TripAdvisor</a>
         </p>
       </div>
       <div class="mediafooter">
@@ -327,5 +260,8 @@
       async defer>
     </script>
   <script src="parimis/js/map.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="parimis/js/jquery-ui.min.js"></script>
+  <script src="parimis/js/main.js"></script>
 </body>
 </html>

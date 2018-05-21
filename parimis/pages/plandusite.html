@@ -6,38 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../stylesheets/normalize.css">
   <link rel="stylesheet" href="../stylesheets/parimisaccueil.css">
+  <link rel="stylesheet" href="../stylesheets/jquery-ui.min.css">
+  <link rel="stylesheet" href="../stylesheets/jquery-ui.structure.min.css">
+  <link rel="stylesheet" href="../stylesheets/jquery-ui.theme.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="../js/midnight.jquery.min.js"></script>
   <script src="../js/jquery.fadethis.js"></script>
   <title>Plan du site</title>
-  <script>
-  $(document).ready(function(){
 
-   //SCRIPT MENU HAMBURGER
-    $('.menubouton').click(function(){
-      $('.menu').toggleClass('active');
-      $('.menubouton').toggleClass('toggle');
-    });
-
-   //SCRIPT OVERLAY RESERVATION
-    $('.book').click(function(){
-      $('.overlaybooking').toggleClass('open');
-    });
-
-   $('.close').click(function(){
-     $('.overlaybooking').toggleClass('open');
-   });
-
-
-    //SCRIPT FADE THIS
-    $('.Itemlegende').fadeThis({"reverse": false});
-    $('.Itemimage').fadeThis()
-    $('.ItemlegendeInverse').fadeThis({"reverse": false});
-    $('.Itemimage').fadeThis()
-
-  });
-  </script>
 </head>
 
 <body>
@@ -49,11 +26,11 @@
           <div><a href="lerestaurant.html">Le Restaurant</a></div>
       </div>
       <div class="logo">
-        Parimis
+        <a href="../../index.html#top">Parimis</a>
       </div>
       <div class="navdroite">
           <div><a href="lespa.html">Le Spa</a></div>
-          <div><a href="#">Contact</a></div>
+          <div><a href="contact.html">Contact</a></div>
       </div>
     </nav>
     <!-- Fin Nav -->
@@ -64,7 +41,7 @@
         <li><a href="leschambres.html">Les chambres</a></li>
         <li><a href="lerestaurant.html">Le restaurant</a></li>
         <li><a href="lespa.html">Le Spa</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="menubouton" type="button" name="button">
         <span></span>
@@ -84,44 +61,12 @@
         <div class="close" title="Fermer">
           <span></span>
         </div>
-      <section class="reserver">
-        <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="date" name="datearrive" ></input> ,</p><br/>
-        <p>jusqu'au <input type="date" name="date départ"></input></p><br/>
-        <input type="submit" name="" value="Réserver">
-        <ul class="dropdown-select nights">
-          <li><a href="/" data-label="1 nuit" data-value="1" data-class="nights">1 nuit</a></li>
-          <li><a href="/" data-label="2 nuits" data-value="2" data-class="nights">2 nuits</a></li>
-          <li><a href="/" data-label="3 nuits" data-value="3" data-class="nights">3 nuits</a></li>
-          <li><a href="/" data-label="4 nuits" data-value="4" data-class="nights">4 nuits</a></li>
-          <li><a href="/" data-label="5 nuits" data-value="5" data-class="nights">5 nuits</a></li>
-          <li><a href="/" data-label="6 nuits" data-value="6" data-class="nights">6 nuits</a></li>
-          <li><a href="/" data-label="7 nuits" data-value="7" data-class="nights">7 nuits</a></li>
-          <li><a href="/" data-label="8 nuits" data-value="8" data-class="nights">8 nuits</a></li>
-          <li><a href="/" data-label="9 nuits" data-value="9" data-class="nights">9 nuits</a></li>
-          <li><a href="/" data-label="10 nuits" data-value="10" data-class="nights">10 nuits</a></li>
-          <li><a href="/" data-label="11 nuits" data-value="11" data-class="nights">11 nuits</a></li>
-          <li><a href="/" data-label="12 nuits" data-value="12" data-class="nights">12 	nuits</a></li>
-          <li><a href="/" data-label="13 nuits" data-value="13" data-class="nights">13 nuits</a></li>
-          <li><a href="/" data-label="14 nuits" data-value="14" data-class="nights">14 nuits</a></li>
-          <li><a href="/" data-label="15 nuits" data-value="15" data-class="nights">15 nuits</a></li>
-          <li><a href="/" data-label="16 nuits" data-value="16" data-class="nights">16 nuits</a></li>
-          <li><a href="/" data-label="17 nuits" data-value="17" data-class="nights">17 nuits</a></li>
-          <li><a href="/" data-label="18 nuits" data-value="18" data-class="nights">18 nuits</a></li>
-          <li><a href="/" data-label="19 nuits" data-value="19" data-class="nights">19 nuits</a></li>
-          <li><a href="/" data-label="20 nuits" data-value="20" data-class="nights">20 nuits</a></li>
-          <li><a href="/" data-label="21 nuits" data-value="21" data-class="nights">21 nuits</a></li>
-          <li><a href="/" data-label="22 nuits" data-value="22" data-class="nights">22 nuits</a></li>
-          <li><a href="/" data-label="23 nuits" data-value="23" data-class="nights">23 nuits</a></li>
-          <li><a href="/" data-label="24 nuits" data-value="24" data-class="nights">24 nuits</a></li>
-          <li><a href="/" data-label="25 nuits" data-value="25" data-class="nights">25 nuits</a></li>
-          <li><a href="/" data-label="26 nuits" data-value="26" data-class="nights">26 nuits</a></li>
-          <li><a href="/" data-label="27 nuits" data-value="27" data-class="nights">27 nuits</a></li>
-          <li><a href="/" data-label="28 nuits" data-value="28" data-class="nights">28 nuits</a></li>
-          <li><a href="/" data-label="29 nuits" data-value="29" data-class="nights">29 nuits</a></li>
-          <li><a href="/" data-label="30 nuits" data-value="30" data-class="nights">30 nuits</a></li>
-        </ul>
-    </section>
+        <section class="reserver">
+          <h3>Cher Parimis,</h3><br/>
+          <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" ></input> ,</p><br/>
+          <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
+          <input type="submit" name="" value="Réserver">
+        </section>
   </div>
   <!-- Fin Overlay Réservation -->
   </header>
@@ -129,71 +74,69 @@
 
   <div class="corps">
     <div class="plandusite hotel">
-      <h2><a href="#">Plan du site:</a></h2>
-      <h3><a href="#">Page d'accueil</a></h3>
+      <h2><a href="plandusite.html">Plan du site:</a></h2>
+      <h3><a href="../../index.html">Page d'accueil</a></h3>
 
 
       <div class="separateur"></div>
 
-      <h3><a href="#">L'hôtel</a></h3>
+      <h3><a href="../../index.html">L'hôtel</a></h3>
       <ul>
-        <li><a href="#">Qui Sommes nous?</a></li>
-        <li><a href="#">Notre héritage</a></li>
-        <li><a href="#">Accès</a></li>
+        <li><a href="../../index.html#hotelhistoire">Notre héritage</a></li>
+        <li><a href="../../index.html#acces">Accès</a></li>
       </ul>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Les chambres</a></h3>
+      <h3><a href="leschambres.html">Les chambres</a></h3>
       <ul>
-        <li><a href="#">Chambres classiques</a></li>
-        <li><a href="#">Chambres confort</a></li>
-        <li><a href="#">Chambres deluxe</a></li>
-        <li><a href="#">Suite</a></li>
+        <li><a href="chambreclassique.html">Chambres classiques</a></li>
+        <li><a href="chambreconfort.html">Chambres confort</a></li>
+        <li><a href="chambredeluxe.html">Chambres deluxe</a></li>
+        <li><a href="suite.html">Suite</a></li>
       </ul>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Le restaurant</a></h3>
+      <h3><a href="lerestaurant.html">Le restaurant</a></h3>
       <ul>
-        <li><a href="#">Carte Brasserie</a></li>
-        <li><a href="#">Carte Dégustation</a></li>
-        <li><a href="#">Carte Restaurant</a></li>
+        <li><a href="lerestaurant.html#menubrasserie">Carte Brasserie</a></li>
+        <li><a href="lerestaurant.html#menudegustation">Carte Dégustation</a></li>
+        <li><a href="lerestaurant.html#menurestaurant">Carte Restaurant</a></li>
       </ul>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Le spa</a></h3>
+      <h3><a href="lespa.html">Le spa</a></h3>
       <ul>
-        <li><a href="#">Soin Détente</a></li>
-        <li><a href="#">Soin Découverte</a></li>
-        <li><a href="#">Soin Relaxant</a></li>
-        <li><a href="#">Soin Plaisir</a></li>
-        <li><a href="#">Soin Evasion</a></li>
+        <li><a href="lespa.html#soindetente">Soin Détente</a></li>
+        <li><a href="lespa.html#soindecouverte">Soin Découverte</a></li>
+        <li><a href="lespa.html#soinrelaxant">Soin Relaxant</a></li>
+        <li><a href="lespa.html#soinplaisir">Soin Plaisir</a></li>
+        <li><a href="lespa.html#soinevasion">Soin Evasion</a></li>
       </ul>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Contact</a></h3>
-      <h3><a href="#">Recrutement</a></h3>
-      <h3><a href="#">Avis</a></h3>
+      <h3><a href="contact.html">Contact</a></h3>
+      <h3><a href="recrutement.html">Recrutement</a></h3>
+      <h3><a href="avis.html">Avis</a></h3>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Actualités</a></h3>
-      <h3><a href="#">Presse</a></h3>
-      <h3><a href="#">Evenement</a></h3>
+      <h3><a href="leblog.html">Actualités</a></h3>
+      <h3><a href="presse.html">Presse</a></h3>
+      <h3><a href="leblog.html#evenements">Evenement</a></h3>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Réservation</a></h3>
-      <h3><a href="#">Panier</a></h3>
+      <h3><a href="reservation.html">Réservation</a></h3>
 
       <div class="separateur"></div>
 
-      <h3><a href="#">Mentions légales</a></h3>
-      <h3><a href="#">Conditions générale de vente</a></h3>
-      <h3><a href="#">Plan du site</a></h3>
+      <h3><a href="mentionslegales.html">Mentions légales</a></h3>
+      <h3><a href="cgv.html">Conditions générale de vente</a></h3>
+      <h3><a href="plandusite.html">Plan du site</a></h3>
 
 
     </div>
@@ -201,24 +144,24 @@
     <footer>
       <div class="rezo">
         <div class="mediafooter">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <p>Rejoignez nous</p>
           <p>
-            <a href="#">Facebook</a>
+            <a href="http://facebook.com" target="_blank">Facebook</a>
           </p>
         </div>
         <div class="mediafooter">
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
           <p>Gallerie</p>
           <p>
-            <a href="#">Instagram</a>
+            <a href="http://instagram.com" target="_blank">Instagram</a>
           </p>
         </div>
         <div class="mediafooter">
-          <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          <a href="http://tripadvisor.com" target="_blank"><i class="fab fa-tripadvisor"></i></a>
           <p>Réserver</p>
           <p>
-            <a href="#">TripAdvisor</a>
+            <a href="http://tripadvisor.com" target="_blank">TripAdvisor</a>
           </p>
         </div>
         <div class="mediafooter">
@@ -229,6 +172,7 @@
             <input type="submit" name="" value="OK">
           </form>
         </div>
+      </div>
       </div>
       <div class="mentions">
         <div class="footer">Adresse: 1 avenue Montaigne <br>
@@ -248,5 +192,9 @@
                                 Site officiel -  Tous droits réservés -  Hôtel Parimis © 2018 -  Conception & réalisation Benjamin Debrach
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
