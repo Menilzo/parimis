@@ -32,10 +32,13 @@ body, html {
 
 h2{
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   font-size: 50px;
   font-family: 'Federo', sans-serif;
+}
+h4{
+  color:#ae8f60;
 }
 p{
   font-size: 16px;
@@ -43,7 +46,7 @@ p{
   margin-left: auto;
   margin-right: auto;
   line-height: 3em;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
     width: 60%;
   };
 }
@@ -79,17 +82,18 @@ section{
     div{
       @include span(1 of 2);
     };
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 992px){
       visibility: visible;
     }
   }
   .logo{
     @include span (1 of 1);
-    font-size: 50px;
+    font-size: 30px;
     line-height: 60px;
     margin-top: -60px;
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 768px){
       @include span(4 of 14);
+      font-size: 50px;
       margin-top: 0;
     };
   }
@@ -102,7 +106,7 @@ section{
     div{
       @include span(1 of 2)
     };
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 992px){
       visibility: visible;
     };
   }
@@ -131,7 +135,7 @@ section{
     font-size: 30px;
     color: white;
   }
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 992px){
     width: 180px;
     i{
       display: none;
@@ -268,72 +272,51 @@ div.overlaybooking .close{
 	-moz-transition: right 0.6s;
 	transition: right 0.6s;
 }
-// .close::before {
-//     position: absolute;
-//     pointer-events: none;
-//     z-index: 10;
-//     content: '';
-//     top: 0%;
-//     left: -100%;
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #ae8f60;
-//     -webkit-transition: left 0s;
-//     -moz-transition: left 0s;
-//     transition: left 0s;
-// }
-// .close:hover::before{
-// 	left:100%;
-// 	-webkit-transition: left 0.6s;
-// 	-moz-transition: left 0.6s;
-// 	transition: left 0.6s;
-// }
 
-
-
-
-
-.midnightHeader.navblack{
-  color: #BCA57D;
-  background: black;
-}
-.midnightHeader.navblanc{
-  color: black;
-  background: rgba(255,255,255, 0.9);
-}
-.midnightHeader.navbleu{
-  color: white;
-  background: rgba(67, 179, 201, 1);
-}
-.recherche{
-  width: 250px;
-  margin-left: -250px
-}
-.recherchebouton{
+.langue{
   position: absolute;
-  width: 50px;
-  height: 50px;
   top: 0;
-  right: 0;
-}
-
-
-.imgintro{
-  @include container;
-  height: 95vh;
-  text-align: center;
-  z-index: 100;
-  h1{
-    font-size: 5em;
-    padding-top: 45vh;
-    font-family: "stencil";
-    a{
-      text-decoration: none;
-      color: #BCA57D;
-    }
+  right: 60px;
+  width: 30px;
+  z-index: 149;
+  color: black;
+  height: 60px;
+  @media screen and (min-width: 992px){
+    right: 180px;
+    width: 60px;
+  }
+  div{
+    padding-top: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height:50%;
+  }
+  div:hover{
+    color: #ae8f60;
+    text-decoration: underline;
   }
 
+}
+
+.imgintro{
+  display:none;
+  @media screen and (min-width: 768px){
+    @include container;
+    display: block;
+    height: 95vh;
+    text-align: center;
+    z-index: 100;
+    h1{
+      font-size: 5em;
+      padding-top: 45vh;
+      font-family: "stencil";
+      a{
+        text-decoration: none;
+        color: #BCA57D;
+      }
+    }
+  }
 }
 .imgintro::after{
   content: "";
@@ -350,13 +333,17 @@ div.overlaybooking .close{
   min-height: 100vh;
 }
 .bloom{
-  position:absolute;
-  top: 0;
-  min-height: 100vh;
-  width: 100%;
-  background-image: radial-gradient(circle at center, white, transparent);
-  z-index: -1;
-  box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
+  display: none;
+  @media screen and (min-width: 768px){
+    display: block;
+    position:absolute;
+    top: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(circle at center, white, transparent);
+    z-index: -1;
+    box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
+  }
 }
 .parallax{
   background-image: url('../img/rooftopMobile.jpg');
@@ -365,14 +352,14 @@ div.overlaybooking .close{
   background-position: center;
   background-size: cover;
   height: 600px;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
   background-image: url('../img/rooftop.jpg')
   }
 }
 
 .corps{
   width: 100%;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
   margin:0;
   padding: 0 25px;
   }
@@ -386,12 +373,9 @@ div.overlaybooking .close{
   background-image: url('../img/pattern.jpg');
   background-repeat: repeat;
   background-position: center;
-  h4{
-    color: #ae8f60;
-  }
   h2{
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 }
 .hotel::before{
@@ -399,20 +383,8 @@ div.overlaybooking .close{
   display: block;
   height: 50px;
 }
-// .hotel::after{
-//     position: absolute;
-//     content: '';
-//     top: 0px;
-//     bottom: 0px;
-//     left: 50%;
-//     display: block;
-//     margin-left: -1px;
-//     width: 1px;
-//     background-color: rgba(0,0,0,0.1);
-//
-// }
 .hotelpara{
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
     @include span (4 of 6);
     @include push (1 of 6);
     border-left: 1px solid rgba(0,0,0,0.1);
@@ -421,7 +393,7 @@ div.overlaybooking .close{
   p{
     @include span (1 of 1);
     padding: 0 60px 60px 60px;
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 768px){
       @include span (1 of 2);
     }
   }
@@ -452,9 +424,12 @@ div.overlaybooking .close{
       h2,p{
         color: #BCA57D;
       }
+      h4{
+        color: rgb(241,241,241);
+      }
   }
   .roomgalery{
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 768px){
       @include span (8 of 10);
       @include push (1 of 10);
     }
@@ -467,7 +442,7 @@ div.overlaybooking .close{
     text-align: left;
     position: relative;
     overflow: hidden;
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 768px){
     @include span (1 of 2);
     }
     img{
@@ -553,27 +528,27 @@ div.overlaybooking .close{
   background: linear-gradient(to bottom, rgba(247,236,228,1), rgba(229,234,245,1));
   margin-top: 30px;
 }
-.restoItem{
+.Item{
   @include container;
   width: 100%;
   height: auto;
   padding: 30px 0;
 }
-.restoImage{
+.Itemimage{
   @include span (12 of 14);
   @include push(1 of 14);
-  min-height: 70vh;
+  min-height: 50vh;
   margin-bottom: 20px;
   img{
     max-width: 100%;
     max-height: 100%;
   }
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
     @include span(5 of 14);
     @include push(2 of 14)
   };
 }
-.restoLegende{
+.Itemlegende{
   @include span (12 of 14);
   @include push(1 of 14);
   padding: 50px 30px;
@@ -581,6 +556,7 @@ div.overlaybooking .close{
   min-height: 50vh;
   box-shadow: 0 4px 15px 0 rgba(143,147,174,.3);
   h3{
+    text-align: left;
     color: black;
     font-weight: bold;
   }
@@ -597,29 +573,16 @@ div.overlaybooking .close{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    padding: 40px 0;
     line-height: 1.5em;
   }
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
     @include span (6 of 14);
     @include pull(1 of 14);
     margin-top: 10vh;
   };
 }
-.restoImagedroite{
-  @include span (12 of 14);
-  @include push(1 of 14);
-  min-height: 70vh;
-  margin-bottom: 20px;
-  img{
-    max-width: 100%;
-    max-height: 100%;
-  }
-  @media screen and (min-width: 700px){
-    @include span(5 of 14);
-    @include pull(2 of 14)
-  };
-}
-.restoLegendegauche{
+.ItemlegendeInverse{
   @include span (12 of 14);
   @include push(1 of 14);
   padding: 50px 30px;
@@ -645,11 +608,25 @@ div.overlaybooking .close{
     margin-right: auto;
     line-height: 1.5em;
   }
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
     @include span (6 of 14);
-    @include push(1 of 14);
+    @include pull(10 of 14);
     margin-top: 10vh;
   };
+}
+.ItemimageInverse{
+  @include span (12 of 14);
+  @include push(1 of 14);
+  min-height: 50vh;
+  margin-bottom: 20px;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  @media screen and (min-width: 768px){
+    @include span(5 of 14);
+    @include push(7 of 14);
+  }
 }
 
 .spa{
@@ -670,7 +647,7 @@ div.overlaybooking .close{
   border: 2px solid #ae8f60;
   box-shadow: 0 4px 15px 0 rgba(143,147,174,.3);
   padding: 40px;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
   width:40%;
   height: 50%;
   position: absolute;
@@ -694,7 +671,7 @@ div.overlaybooking .close{
 .contact{
   width: 100%;
   padding: 40px;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
   position: absolute;
   bottom:75px;
   left: 250px;
@@ -706,7 +683,7 @@ div.overlaybooking .close{
 }
 footer{
   width: 100%;
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 768px){
   padding: 0 25px;
   margin:0;
   }
@@ -721,7 +698,7 @@ footer{
     a{
       color: #AC8F5D;
     }
-    @media screen and(min-width: 700px ){
+    @media screen and(min-width: 768px ){
       height: 150px;
     }
   }
@@ -729,22 +706,23 @@ footer{
     @include span (1 of 1);
     height: 150px;
     color: white;
-    @media screen and(min-width: 700px ){
+    @media screen and(min-width: 768px ){
       height: 150px;
       @include span (1 of 4);
       }
   }
   .mentions{
     @include container;
-    @media screen and(min-width:700px){
+    padding-top: 30px;
+    @media screen and(min-width:768px){
       @include span (2 of 4);
       @include push (1 of 4);
-      height: 200px;
+      height: 230px;
     }
-    .item{
+    .footer{
       padding-top: 45px;
       @include span (1 of 1);
-      @media screen and(min-width: 700px){
+      @media screen and(min-width: 768px){
         @include span (1 of 3);
       }
     }
@@ -779,9 +757,13 @@ footer{
     }
   }
   .footerbottom{
+    p{
+      padding-top: 15px;
+      line-height: 1em;
+    }
     @include container;
     padding-top: 45px;
-    @media screen and(min-width:700px){
+    @media screen and(min-width:768px){
       @include span (2 of 4);
       @include push (1 of 4);
       height: 150px;
@@ -796,18 +778,18 @@ footer i{
 }
 
 
+
+//CAROUSEL
 .slideshow-container {
   width:100%;
   position: relative;
   margin: auto;
   height: 750px;
 }
-
 /* Hide the images by default */
 .mySlides {
     display: none;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -822,7 +804,6 @@ footer i{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
 /* Position the "next button" to the right */
 .prev{
   left:0;
@@ -831,12 +812,10 @@ footer i{
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -847,7 +826,6 @@ footer i{
   width: 100%;
   text-align: center;
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -856,7 +834,6 @@ footer i{
   position: absolute;
   top: 0;
 }
-
 /* The dots/bullets/indicators */
 .divdot{
   position: absolute;
@@ -874,11 +851,9 @@ footer i{
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ae8f60;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -886,13 +861,491 @@ footer i{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+// FIN DU CAROUSEL
+
+
+//MENTION LEGALES ET CGV
+.mentionslegale{
+  border-top: 15px solid #313A3D;
+  border-bottom: 15px solid #313A3D;
+  margin: 70px 10px;
+  padding: 30px 0;
+  text-align: center;
+  a{
+    text-decoration: underline;
+    color: black;
+  }
+  p{
+    line-height: 1.5em;
+    padding: 10px;
+
+  }
+  h3{
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 768px){
+    width: 80%;
+    margin: 70px auto;
+  }
+}
+.separateur{
+  display: inline-block;
+  width: 30%;
+  margin: 40px auto;
+  height: 3px;
+  background: #ae8f60;
+}
+
+// PLAN DU SITE
+.plandusite{
+  margin: 50px 10px;
+  padding: 30px 0;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover{
+    color:#ae8f60;
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    line-height: 1em;
+    padding: 10px;
+
+  }
+  h3{
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 768px){
+    width: 80%;
+    margin: 50px auto;
+  }
+}
+.separateur{
+  display: inline-block;
+  width: 20%;
+  margin: 40px auto;
+  height: 3px;
+  background: #ae8f60;
+}
+
+//FORMULAIRE
+#formulaire {
+  width:100%;
+  color: #B6B6B6;
+  background-image: url('../img/pattern.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  margin: 60px auto 120px;
+  border-top: 15px solid #313A3D;
+  border-bottom: 15px solid #313A3D;
+  text-align: center;
+  padding: 50px 0 110px;
+  max-width: 1100px;
+  h6{
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 768px){
+  width: 80%;
+  }
+}
+body section h2 {
+  color: #313A3D;
+  margin-bottom: 40px;
+  font-weight: 100;
+}
+form {
+  width: 80%;
+  margin: 0 auto;
+  @media screen and (min-width: 768px){
+  width: 58.3333333333%;
+  }
+}
+.required::after{
+  content: '*';
+  position: absolute;
+  top: 0;
+  right: -15px;
+  display: block;
+  font-size: 25px;
+}
+form .field {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+form .fielddate{
+  @include span (1 of 1);
+  @media screen and (min-width: 768px){
+  @include span (7 of 15);
+  }
+}
+form .depart{
+  @media screen and (min-width: 768px){
+  @include push(1 of 15);
+  }
+}
+form .field i{
+  font-size: 1.45em;
+  display:none;
+}
+form .field label p{
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 1.45em;
+  letter-spacing: 0.075em;
+  height: 100%;
+}
+form .field label {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: url('../img/rezo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"],
+form .field textarea {
+  border: none;
+  background: #E8E9EA;
+  width: 100%;
+  margin: 0;
+  padding: 17px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+
+}
+form .field input[type="file"],
+form .field textarea{
+  border: none;
+  background: #E8E9EA;
+  width: 100%;
+  margin: 0;
+  padding: 14px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+}
+form .field select {
+  border: none;
+  background: #E8E9EA;
+  width: 100%;
+  margin: 0;
+  padding: 16px 0;
+  padding-left: 19.5%;
+  color: #313A3D;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+form .field input[type="text"]#msg,
+form .field textarea#msg {
+  height: 100%;
+  resize: none;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+form .field input[type="text"]:focus, form .field input[type="text"].focused,
+form .field textarea:focus,
+form .field textarea.focused,
+form .field select:focus,
+form .field select.focused {
+  outline: none;
+}
+#msg.msgselected {
+  padding-bottom: 150px;
+}
+form .field label.labelselected{
+  width: 18%;
+  padding: 18px 0;
+  background: #ae8f60;
+  color: #313A3D;
+}
+form .field label.labelselected p{
+  display: none;
+
+}
+form .field label.labelselected i{
+  display: block;
+  font-size: 1.45em;
+}
+#formulaire form input[type="submit"] {
+  background: #ae8f60;
+  color: white;
+  -webkit-appearance: none;
+  border: none;
+  text-transform: uppercase;
+  position: relative;
+  padding: 13px 50px;
+  margin-top: 30px;
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  -webkit-transition: all 333ms ease-in-out;
+  -moz-transition: all 333ms ease-in-out;
+  -o-transition: all 333ms ease-in-out;
+  -ms-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+#formulaire form input[type="submit"]:hover {
+  background-image: url('../img/rezo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ae8f60;
+}
+#formulaire form input[type="submit"]:focus {
+  outline: none;
+  background:  #ae8f60;
+}
+
+// RESERVATION
+.resa{
+
+  background-image: url('../img/img/bgbase.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.resa #formulaire{
+  margin: 60px auto 25px;
+}
+
+//AVIS ONGLETS
+.tabContainer{
+  width:100%;
+  background-image: url('../img/pattern.jpg');
+  background-repeat: repeat;
+  background-position: center;
+  margin: 60px auto 120px;
+  border-top: 15px solid #313A3D;
+  border-bottom: 15px solid #313A3D;
+  text-align: center;
+  padding: 50px 0 110px;
+  max-width: 1100px;
+}
+.buttonContainer{
+  height: 60px;
+  width: 80%;
+  margin: 0 auto;
+  button{
+    @include span (1 of 1);
+    text-transform: uppercase;
+    font-size: 1.35em;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    height:100%;
+    border: 1px solid #ae8f60;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    color: #B6B6B6;
+    background-image: url('../img/rezo.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    @media screen and (min-width: 768px){
+      @include span (2 of 4);
+    }
+    @media (min-width: 1024px){
+      @include span (1 of 4);
+    }
+    &:hover{
+      background: #ae8f60;
+      color: white;
+    }
+  }
+}
+.tabPanel{
+  background: #ae8f60;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: none;
+  .avis{
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    color:#313A3D;
+    box-shadow: 0 5px 5px rgba(31, 15, 15, 0.2);
+    p{
+      width:100%;
+      padding: 5px 10px;
+      line-height: 1.2em;
+    }
+    .name,.note{
+      text-align: left;
+    }
+    .note{
+      padding-top: 0
+    }
+    .citation{
+      font-style: italic;
+      padding: 10px;
+    }
+    .dateavis{
+      text-align: right;
+    }
+  }
+}
+//PRESSE
+.pressecontainer{
+  border-top: 15px solid #313A3D;
+  border-bottom: 15px solid #313A3D;
+  margin: 70px 10px;
+  padding: 30px 0;
+  margin-right: auto;
+  margin-left: auto;
+  // padding-left: 7.5px;
+  // padding-right: 7.5px;
+  a{
+    text-decoration: none;
+  }
+  p{
+    line-height: 1em;
+    color:#313A3D;
+  }
+    @media (min-width: 768px){
+      width: 735px;
+    }
+    @media (min-width: 1024px){
+      width: 955px;
+    }
+    @media (min-width: 1200px){
+      width: 1155px;
+    }
+    .Itempresse{
+      @include span (1 of 1);
+      padding-bottom: 40px;
+
+      @media screen and (min-width: 768px){
+        @include span (1 of 2);
+      }
+
+      @media screen and (min-width: 1024px ){
+        @include span(1 of 3);
+      }
+
+      @media (min-width: 1200px){
+        @include span(1 of 4);
+      }
+    }
+}
+
+//ACTUALITES & EVENEMENTS
+.carteContainer{
+  @include span (1 of 1);
+  @media screen and (min-width: 768px){
+    @include span (1 of 2);
+  }
+
+  @media screen and (min-width: 1024px ){
+    @include span(1 of 2);
+  }
+}
+.carte{
+  width: 80%;
+  margin: 30px auto;
+  background: whitesmoke;
+  color: #444;
+  border: 1px solid #ae8f60;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  // min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+.carte article{
+  padding: 20px;
+  background: white;
+}
+.carte h3{
+  text-align: left;
+  color: #333;
+  font-size: 20px;
+}
+.carte p{
+  width: 80%;
+  padding: 20px 0;
+  line-height: 1.5;
+}
+.carteDate{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  color: #FFF;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  background-color: #ae8f60;
+  border-radius: 50%;
+  .jour{
+    display: block;
+    font-size: 14px;
+  }
+  .mois{
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+}
+.carte .vignette{
+  /*background-color: whitesmoke;*/
+  padding-top: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+.carte:hover{
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+
+.conteneurIframe{
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 500px;
+  iframe{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:100%;
+  }
 }
