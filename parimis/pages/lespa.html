@@ -51,7 +51,7 @@
         <li>
           <span class="recherche"><i class="fas fa-search"></i>Recherche Rapide</span>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="Que recherchez vous?">
+            <input type="text" name="recherche" value="recherche" placeholder="Que recherchez vous?">
           </form>
         </li>
 
@@ -76,9 +76,9 @@
       </div>
       <section class="reserver">
         <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker"></input> ,</p><br/>
-        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
-        <input type="submit" name="" value="Réserver">
+        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker">,</p><br/>
+        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></p><br/>
+        <input type="submit" value="Réserver">
       </section>
     </div>
     <!-- Fin Overlay Réservation -->
@@ -120,14 +120,18 @@
       <h4>Luxe, Calme & Volupté</h4>
       <h2>Le spa</h2>
       <div class="hotelpara ">
-        <p class="paragauche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
-        <p class="paradroite">
-          <a href="#soindetente">Soin détente</a> <br>
-          <a href="#soindecouverte">Soin découverte</a> <br>
-          <a href="#soinrelaxant">Soin relaxant</a> <br>
-          <a href="#soinplaisir">Soin plaisir</a> <br>
-          <a href="#soinevasion">Soin évasion</a> <br>
-        </p>
+        <div class="paragauche">
+          <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+        </div>
+        <div class="paradroite">
+          <p>
+            <a href="#soindetente">Soin détente</a> <br>
+            <a href="#soindecouverte">Soin découverte</a> <br>
+            <a href="#soinrelaxant">Soin relaxant</a> <br>
+            <a href="#soinplaisir">Soin plaisir</a> <br>
+            <a href="#soinevasion">Soin évasion</a> <br>
+          </p>
+        </div>
       </div>
     </section>
     <section class="resto pageresto" data-midnight="navblack">
@@ -230,11 +234,10 @@
           <a href="#"><i class="far fa-envelope-open"></i></a>
           <p>Newsletter</p>
           <form>
-            <input type="text" name="" value="" placeholder="Votre email">
-            <input type="submit" name="" value="OK">
+            <input type="text" name="mail" value="mail" placeholder="Votre email">
+            <input type="submit" value="OK">
           </form>
         </div>
-      </div>
       </div>
       <div class="mentions">
         <div class="itemfooter">Adresse: 1 avenue Montaigne <br>
