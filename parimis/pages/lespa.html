@@ -51,7 +51,7 @@
         <li>
           <span class="recherche"><i class="fas fa-search"></i>Recherche Rapide</span>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="Que recherchez vous?">
+            <input type="text" name="recherche" value="recherche" placeholder="Que recherchez vous?">
           </form>
         </li>
 
@@ -76,9 +76,9 @@
       </div>
       <section class="reserver">
         <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker"></input> ,</p><br/>
-        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
-        <input type="submit" name="" value="Réserver">
+        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker">,</p><br/>
+        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></p><br/>
+        <input type="submit" value="Réserver">
       </section>
     </div>
     <!-- Fin Overlay Réservation -->
@@ -120,67 +120,74 @@
       <h4>Luxe, Calme & Volupté</h4>
       <h2>Le spa</h2>
       <div class="hotelpara ">
-        <p class="paragauche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
-        <p class="paradroite">
-          <a href="#soindetente">Soin détente</a> <br>
-          <a href="#soindecouverte">Soin découverte</a> <br>
-          <a href="#soinrelaxant">Soin relaxant</a> <br>
-          <a href="#soinplaisir">Soin plaisir</a> <br>
-          <a href="#soinevasion">Soin évasion</a> <br>
-        </p>
+        <div class="paragauche">
+          <p> <mark>C</mark>et espace luxueux situé dans l’établissement permet de ressourcer le corps et l’esprit. Avec sa décoration épurée où les notes minérales et végétales confèrent au lieu un sentiment de bien-être immédiat, le raffinement et le luxe sont les maîtres mots du Spa Parimis.</p>
+
+          <p>Dans un cadre hors pair se côtoient un bassin couvert, 10 cabines à la décoration apaisante, et une équipe de professionnels prêts à vous prodiguer des programmes sur mesure, alliant science et expérience sensorielle.</p>
+
+          <p>La piscine couverte est libre d'accès aux clients de l'hôtel jusqu'à 22h30.
+          Le spa est ouvert de 9h à 21h.</p>
+        </div>
+        <div class="paradroite">
+            <h3><a href="#soindetente">Soin détente</a></h3>
+            <h3><a href="#soindecouverte">Soin découverte</a></h3>
+            <h3><a href="#soinrelaxant">Soin relaxant</a></h3>
+            <h3><a href="#soinplaisir">Soin plaisir</a></h3>
+            <h3><a href="#soinevasion">Soin évasion</a></h3>
+        </div>
       </div>
     </section>
     <section class="resto pageresto" data-midnight="navblack">
       <h2>Nos gammes de soins</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsa. Tempore culpa nesciunt modi explicabo mollitia eos cum sunt doloremque. Quas excepturi sunt, magni vero ex, vitae optio tempora rerum sequi eaque et eveniet dolorem quos ratione iste obcaecati fugiat possimus ullam fuga quae perferendis nostrum numquam debitis vel. Aperiam.</p>
       <div class="Item" id="soindetente">
         <div class="Itemimage">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/spa/soindetente.jpg" alt="">
         </div>
         <div class="Itemlegende slide-right">
           <h3>Soin Détente</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <p>Pour vous délester du stress quotidien, notre équipe vous propose un massage détente aux huiles essentielles ou un massage tonique.Réalisé sur l'ensemble du corps, le massage se fait par manœuvres douces à toniques de pétrissages des muscles, d'effleurages, de pressions et de lissages fluides.</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
       <div class="Item" id="soindecouverte">
         <div class="ItemimageInverse">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/spa/soindecouverte.jpg" alt="">
         </div>
         <div class="ItemlegendeInverse slide-left">
           <h3>Soin Découverte</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <p>Note offre découverte vous propose les bienfaits revitalisants d'un massage tonique aux huiles essentielles, couplé avec un soin des mains ou du visage, au choix.</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
       <div class="Item" id="soinrelaxant">
         <div class="Itemimage">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/spa/soinrelaxant.jpg" alt="">
         </div>
         <div class="Itemlegende slide-right">
           <h3>Soin Relaxant</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <p>Notre soin relaxant cumule les bienfaits d'un massage détente aux huiles essentielles, d'un soin au choix, ainsi que d'un accès au hammam et au sauna.</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
       <div class="Item" id="soinplaisir">
         <div class="ItemimageInverse">
-          <img src="../img/spa/spa1.jpg" alt="">
+          <img src="../img/spa/soinplaisir.jpg" alt="">
         </div>
         <div class="ItemlegendeInverse slide-left">
           <h3>Soin Découverte</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
       <div class="Item" id="soinevasion">
         <div class="Itemimage">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/spa/soinevasion.jpg" alt="">
         </div>
         <div class="Itemlegende slide-right">
           <h3>Soin Evasion</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <p>Un soin complet intégrant soin du visage et des mains, gommage à la perle, massage au miel fondant et pierres chaudes, ainsi qu'un accès au spa toute la journée. Le Spa Parimis vous offre également une dégustation d'amuse-bouche proposés par le Chef du Restaurant, ainsi qu'un kit de soin à emporter avec vous.</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
     </section>
@@ -230,11 +237,10 @@
           <a href="#"><i class="far fa-envelope-open"></i></a>
           <p>Newsletter</p>
           <form>
-            <input type="text" name="" value="" placeholder="Votre email">
-            <input type="submit" name="" value="OK">
+            <input type="text" name="mail" value="mail" placeholder="Votre email">
+            <input type="submit" value="OK">
           </form>
         </div>
-      </div>
       </div>
       <div class="mentions">
         <div class="itemfooter">Adresse: 1 avenue Montaigne <br>

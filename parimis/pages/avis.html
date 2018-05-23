@@ -67,18 +67,17 @@
         </div>
         <section class="reserver">
           <h3>Cher Parimis,</h3><br/>
-          <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" ></input> ,</p><br/>
-          <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
-          <input type="submit" name="" value="Réserver">
+          <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" >,</p><br/>
+          <p>jusqu'au <input type="text" name="date départ" class="datepicker"></p><br/>
+          <input type="submit" value="Réserver">
         </section>
       </div>
-    </div>
     <!-- Fin Overlay Réservation -->
   </header>
 
 <!-- Debut du corps de la page -->
   <div class="corps">
-    <div class="tabContainer" >
+    <div class="tabContainer">
       <h4>Le goût de l'accueil</h4>
       <h2>Livre d'or</h2>
       <div class=" buttonContainer">
@@ -247,11 +246,11 @@
           </div>
 
           <div class="field sujet-select">
-              <label for="pays">
+              <label for="sujet">
                 <i class="fas fa-question"></i>
                 <p>Sujet</p>
               </label>
-              <select id="monselect">
+              <select id="sujet">
                 <option value="valeur1" selected>Les Chambres</option>
                 <option value="valeur2">Le Restaurant</option>
                 <option value="valeur3">Le Spa</option>
@@ -260,11 +259,11 @@
           </div>
 
           <div class="field sujet-select required">
-              <label for="Note">
+              <label for="note">
                 <i class="fas fa-star"></i>
                 <p>Note</p>
               </label>
-              <select id="monselect">
+              <select id="note">
                 <option value="valeur1">1 étoile </option>
                 <option value="valeur2">2 étoiles</option>
                 <option value="valeur3">3 étoiles</option>
@@ -275,7 +274,7 @@
 
 
           <div class="field msg-box required">
-              <textarea id="msg" rows="4" placeholder="Votre message"/></textarea>
+              <textarea id="msg" rows="4" placeholder="Votre message"></textarea>
               <label class="champstxt" for="msg">
                 <i class="far fa-comment"></i>
                 <p>Message</p>
@@ -288,7 +287,7 @@
           <h6>* Champs obligatoires</h6>
       </form>
     </section>
-
+  </div>
     <!-- Footer -->
     <footer>
       <div class="rezo">
@@ -317,8 +316,8 @@
           <a href="#"><i class="far fa-envelope-open"></i></a>
           <p>Newsletter</p>
           <form>
-            <input type="text" name="" value="" placeholder="Votre email">
-            <input type="submit" name="" value="OK">
+            <input type="text" name="mail" value="mail" placeholder="Votre email">
+            <input type="submit" value="OK">
           </form>
         </div>
       </div>

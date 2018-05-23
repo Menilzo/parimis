@@ -23,10 +23,6 @@ $(document).ready(function(){
    dateFormat: "dd-mm-yy"
  });
 
-  //SCRIPT FADE THIS
-  $('.restoLegende').fadeThis({"reverse": false});
-  $('.restoImage').fadeThis()
-
    //SCRIPT OVERLAY GAMMES CHAMBRE
    $('.chambreItem').click(function(){
      $(this).find('.overlay').toggleClass('overlaytoggle');
@@ -41,7 +37,7 @@ $(document).ready(function(){
    $('.champstxt').click(function(){
      $('#msg').toggleClass('msgselected')
    });
-   
+
 });
 
 //Slideshow

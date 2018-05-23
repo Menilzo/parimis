@@ -50,7 +50,7 @@
         <li>
           <span class="recherche"><i class="fas fa-search"></i>Recherche Rapide</span>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="Que recherchez vous?">
+            <input type="text" name="recherche" value="recherche" placeholder="Que recherchez vous?">
           </form>
         </li>
 
@@ -75,9 +75,9 @@
       </div>
       <section class="reserver">
         <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" ></input> ,</p><br/>
-        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
-        <input type="submit" name="" value="Réserver">
+        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" >,</p><br/>
+        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></p><br/>
+        <input type="submit" value="Réserver">
       </section>
     </div>
     <!-- Fin Overlay Réservation -->
@@ -93,24 +93,16 @@
   <div class="corps">
     <div class="slideshow-container">
 
-      <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
-        <div class="slide"></div>
-        <!-- <img src="../img/rooftop.jpg" style="width:100%"> -->
+        <div class="slide resto1"></div>
       </div>
 
       <div class="mySlides fade">
-        <div class="slide">
-
-        </div>
-        <!-- <img src="../img/rooftop.jpg" style="width:100%"> -->
+        <div class="slide resto2"></div>
       </div>
 
       <div class="mySlides fade">
-        <div class="slide">
-
-        </div>
-        <!-- <img src="../img/rooftop.jpg" style="width:100%"> -->
+        <div class="slide resto3"></div>
       </div>
 
     <!-- Next and previous buttons -->
@@ -128,42 +120,78 @@
       <div class="spriteResto"></div>
       <h4>Le Goût</h4>
       <h2>Le Restaurant</h2>
-      <div class="hotelpara ">
-        <p class="paragauche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
-        <p class="paradroite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+      <div class="hotelpara">
+        <div class="paragauche">
+          <p><mark>L</mark>a table et la cuisine, le cœur et le poumon de la maison. L'architecture du bâtiment a décidé des espaces intérieurs et leur aménagement a évolué avec le temps. Le style art déco fait toujours honneur à la tradition française . Les 5 salles du restaurant offrent des volumes et des ambiances différents pour que chacun retrouve un brin de chez soi. L'âme de la Maison ne serait pas sans un personnel attentionné, une équipe soudée et attachée à l'esprit <strong>Parimis</strong>, encore témoin et relais de cette hospitalité qui survit de génération en génération.</p>
+        </div>
+        <div class="paradroite">
+          <p><mark>T</mark>rès attaché au monde qui l'entoure, le Chef travaille des <strong>produits frais</strong>, de saison, avec des assiettes graphiques. Il se place en héritier d’une tradition culinaire française dépoussiérée. La carte allie <strong>brunch et tapas</strong> pour les gourmands du matin et du déjeuner, et propose des <strong>plats raffinés et délicats</strong> pour le dîner. <br>
+          Un <strong>menu dégustation d’exception</strong> ravira les aventuriers de la cuisine gastronomique, alliant créations originales du Chef et interprétation libre de grands classiques de la cuisine de saison.
+          </p>
+        </div>
       </div>
     </section>
     <section class="resto pageresto" data-midnight="navblack">
       <h2>Nos Cartes</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsa. Tempore culpa nesciunt modi explicabo mollitia eos cum sunt doloremque. Quas excepturi sunt, magni vero ex, vitae optio tempora rerum sequi eaque et eveniet dolorem quos ratione iste obcaecati fugiat possimus ullam fuga quae perferendis nostrum numquam debitis vel. Aperiam.</p>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ipsa. Tempore culpa nesciunt modi explicabo mollitia eos cum sunt doloremque. Quas excepturi sunt, magni vero ex, vitae optio tempora rerum sequi eaque et eveniet dolorem quos ratione iste obcaecati fugiat possimus ullam fuga quae perferendis nostrum numquam debitis vel. Aperiam.</p> -->
       <div class="Item" id="menubrasserie">
         <div class="Itemimage">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/restaurant/menubrasserie.jpg" alt="">
         </div>
-        <div class="Itemlegende slide-right">
+        <div class="Itemlegende legenderesto slide-right">
           <h3>Carte Brasserie</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <h4>Entrées</h4>
+          <div class="separateurResto"></div>
+          <p>Carpaccio de dorade royale, pousses d’herbes sauvages des côtes du Croisic</p>
+          <p>Tartare de thon rouge / maquereau / foie gras de canard</p>
+          <h4>Plats</h4>
+          <div class="separateurResto"></div>
+          <p>Navarin d’agneau printanier</p>
+          <p>Lichettes de Saint-Pierre, marinière de coques, chou pointu</p>
+          <h4>Desserts</h4>
+          <div class="separateurResto"></div>
+          <p>Mangue à la coriandre, croquants aux amandes caramélisées</p>
+          <p>Chocolat de notre manufacture, grué de caco et kasha</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
       <div class="Item" id="menudegustation">
         <div class="ItemimageInverse">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/restaurant/menudegustation.jpg" alt="">
         </div>
-        <div class="ItemlegendeInverse slide-left">
+        <div class="ItemlegendeInverse legenderesto slide-left">
           <h3>Carte dégustation</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <h4>Carte de l'après-midi</h4>
+          <div class="separateurResto"></div>
+          <p>Buratta Olives Taggiashe, chips de topinambours</p>
+          <p>Légumes de saison crus, crème citron, ciboulette et piment d'espelette</p>
+          <p>Tartine croustillante, avocat, canard fumé, mangue</p>
+          <p>Sélection de 3 fromages fermiers</p>
+          <div class="separateurResto"></div>
+          <p>Glace au fromage blanc, sablé breton, crème cheesecake, fraises de Sologne</p>
+          <p>Sablé au chocolat noir du clos de L’Arche, glace à la fleur de sel</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
       <div class="Item" id="menurestaurant">
         <div class="Itemimage">
-          <img src="http://placehold.it/750x750" alt="">
+          <img src="../img/restaurant/menurestaurant.jpg" alt="">
         </div>
-        <div class="Itemlegende slide-right">
+        <div class="Itemlegende legenderesto slide-right">
           <h3>Carte Restaurant</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magnam debitis fuga dicta, dignissimos temporibus ut voluptates eligendi iusto dolores, ipsa quidem dolor, eaque corporis.</p>
-          <h3 class="voirPlus">Voir nos cartes</h3>
+          <h4>Entrées</h4>
+          <div class="separateurResto"></div>
+          <p>Carpaccio de dorade royale, pousses d’herbes sauvages des côtes du Croisic</p>
+          <p>Tartare de thon rouge / maquereau / foie gras de canard</p>
+          <h4>Plats</h4>
+          <div class="separateurResto"></div>
+          <p>Navarin d’agneau printanier</p>
+          <p>Lichettes de Saint-Pierre, marinière de coques, chou pointu</p>
+          <h4>Desserts</h4>
+          <div class="separateurResto"></div>
+          <p>Mangue à la coriandre, croquants aux amandes caramélisées</p>
+          <p>Chocolat de notre manufacture, grué de caco et kasha</p>
+          <h3 class="voirPlus"><a href="reservation.html">Réservez</a></h3>
         </div>
       </div>
     </section>
@@ -213,8 +241,8 @@
           <a href="#"><i class="far fa-envelope-open"></i></a>
           <p>Newsletter</p>
           <form>
-            <input type="text" name="" value="" placeholder="Votre email">
-            <input type="submit" name="" value="OK">
+            <input type="text" name="mail" value="mail" placeholder="Votre email">
+            <input type="submit" value="OK">
           </form>
         </div>
       </div>

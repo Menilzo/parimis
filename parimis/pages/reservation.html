@@ -65,9 +65,9 @@
         </div>
       <section class="reserver">
         <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker"></input> ,</p><br/>
-        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
-        <input type="submit" name="" value="Réserver">
+        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker">,</p><br/>
+        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></p><br/>
+        <input type="submit" value="Réserver">
       </section>
     </div>
     <!-- Fin Overlay Réservation -->
@@ -102,7 +102,7 @@
                 <i class="fas fa-bed"></i>
                 <p>Chambre (gamme)</p>
               </label>
-              <select id="monselect">
+              <select id="chambre">
                 <option value="valeur1">Chambre classique</option>
                 <option value="valeur2">Chambre confort</option>
                 <option value="valeur3">Chambre deluxe</option>
@@ -115,7 +115,7 @@
                 <i class="fas fa-utensils"></i>
                 <p>Restaurant (option)</p>
               </label>
-              <select id="monselect">
+              <select id="restaurant">
                 <option value="valeur1" selected>Menu Brasserie</option>
                 <option value="valeur2">Menu Dégustation</option>
                 <option value="valeur3">Menu Restaurant</option>
@@ -128,7 +128,7 @@
                 <i class="fas fa-tint"></i>
                 <p>Spa (option)</p>
               </label>
-              <select id="monselect">
+              <select id="Spa">
                 <option value="valeur1">Formule dévouverte - 2 soins</option>
                 <option value="valeur2">Formule Premium - 3 soins </option>
                 <option value="valeur3">Formule Deluxe - 5 soins</option>
@@ -141,7 +141,7 @@
                 <i class="fas fa-users"></i>
                 <p>Visiteur(s)</p>
               </label>
-              <select id="monselect">
+              <select id="Visiteur(s)">
                 <option value="valeur1">1 à 2 visiteurs</option>
                 <option value="valeur2">3 visiteurs </option>
                 <option value="valeur3">4 visiteurs</option>
@@ -151,7 +151,7 @@
 
           <div class="field fielddate date-box required ">
               <input type="text" id="datearrive" placeholder="Date d'arrivée" class="datepicker" autocomplete="off"/>
-              <label for="Arrivée">
+              <label for="datearrive">
                 <i class="fas fa-calendar-alt"></i>
                 <p>Arrivée</p>
               </label>
@@ -159,7 +159,7 @@
 
           <div class="field fielddate depart date-box required ">
               <input type="text" id="datedepart" placeholder="date de départ" class="datepicker" autocomplete="off"/>
-              <label for="Départ">
+              <label for="datedepart">
                 <i class="fas fa-calendar-alt"></i>
                 <p>Départ</p>
               </label>
@@ -203,8 +203,8 @@
           <a href="#"><i class="far fa-envelope-open"></i></a>
           <p>Newsletter</p>
           <form>
-            <input type="text" name="" value="" placeholder="Votre email">
-            <input type="submit" name="" value="OK">
+            <input type="text" name="mail" value="mail" placeholder="Votre email">
+            <input type="submit" value="OK">
           </form>
         </div>
       </div>

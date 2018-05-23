@@ -21,15 +21,15 @@
     <!-- Nav -->
     <nav class="navfixed">
       <div class="navgauche">
-          <div><a href="parimis/pages/leschambres.html">Les Chambres</a></div>
-          <div><a href="parimis/pages/lerestaurant.html">Le Restaurant</a></div>
+          <div><a href="leschambres.html">Les Chambres</a></div>
+          <div><a href="lerestaurant.html">Le Restaurant</a></div>
       </div>
       <div class="logo">
         <a href="../../index.html#top">Parimis</a>
       </div>
       <div class="navdroite">
-          <div><a href="parimis/pages/lespa.html">Le Spa</a></div>
-          <div><a href="#">Contact</a></div>
+          <div><a href="lespa.html">Le Spa</a></div>
+          <div><a href="contact.html">Contact</a></div>
       </div>
     </nav>
     <!-- Fin Nav -->
@@ -38,18 +38,18 @@
     <div class="menu">
       <ul>
         <li><a href="../../index.html">Accueil</a></li>
-        <li><a href="parimis/pages/leschambres.html">Les chambres</a></li>
-        <li><a href="parimis/pages/lerestaurant.html">Le restaurant</a></li>
-        <li><a href="parimis/pages/lespa.html">Le Spa</a></li>
+        <li><a href="leschambres.html">Les chambres</a></li>
+        <li><a href="lerestaurant.html">Le restaurant</a></li>
+        <li><a href="lespa.html">Le Spa</a></li>
         <li><a href="reservation.html">Réserver</a></li>
         <li><a href="plandusite.html">Plan du Site</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
 
         <!-- RECHERCHE RAPIDE-->
         <li>
           <span class="recherche"><i class="fas fa-search"></i>Recherche Rapide</span>
           <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" placeholder="Que recherchez vous?">
+            <input type="text" name="recherche" value="recherche" placeholder="Que recherchez vous?">
           </form>
         </li>
 
@@ -63,7 +63,7 @@
 
     <!-- Overlay Réservation -->
     <div class="reserver">
-      <a class="book" href="#">
+      <a class="book" href="reservation.html">
         <i class="far fa-calendar-alt"></i>
         <span>Réserver</span>
       </a>
@@ -74,9 +74,9 @@
       </div>
       <section class="reserver">
         <h3>Cher Parimis,</h3><br/>
-        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" ></input> ,</p><br/>
-        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></input></p><br/>
-        <input type="submit" name="" value="Réserver">
+        <p>J'aimerais réserver le <input type="text" name="datearrive" class="datepicker" >,</p><br/>
+        <p>jusqu'au <input type="text" name="date départ" class="datepicker"></p><br/>
+        <input type="submit" value="Réserver">
       </section>
     </div>
     <!-- Fin Overlay Réservation -->
@@ -121,8 +121,12 @@
       <h4>Raffinement & Design</h4>
       <h2>Nos Chambres</h2>
       <div class="hotelpara">
-        <p class="paragauche">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
-        <p class="paradroite">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+        <div class="paragauche">
+          <p > <mark>L</mark>orem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+        </div>
+        <div class="paradroite">
+          <p><mark>I</mark>psum dolor sit amet, consectetur adipisicing elit. Adipisci quis, inventore dolore eos. Tenetur ab ipsa nesciunt autem aliquid? Earum dolores magni, a voluptates. Officiis, cumque optio nostrum tempora laudantium iste incidunt, necessitatibus velit ullam deleniti repellat. Recusandae ipsa repudiandae, pariatur nulla repellat reprehenderit sint, earum, hic autem sunt eos! Itaque quae architecto consequatur corporis nam sed sapiente eveniet ducimus tempora praesentium veniam accusantium eos similique ipsum veritatis iste vel voluptatibus facere, eius voluptates eaque optio.</p>
+        </div>
       </div>
     </section>
     <section class="chambre" data-midnight="navblanc">
@@ -159,32 +163,32 @@
   <footer>
     <div class="rezo">
       <div class="mediafooter">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
         <p>Rejoignez nous</p>
         <p>
-          <a href="#">Facebook</a>
+          <a href="http://facebook.com">Facebook</a>
         </p>
       </div>
       <div class="mediafooter">
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
         <p>Gallerie</p>
         <p>
-          <a href="#">Instagram</a>
+          <a href="http://instagram.com">Instagram</a>
         </p>
       </div>
       <div class="mediafooter">
-        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+        <a href="http://tripadvisor.com"><i class="fab fa-tripadvisor"></i></a>
         <p>Réserver</p>
         <p>
-          <a href="#">TripAdvisor</a>
+          <a href="http://tripadvisor.com">TripAdvisor</a>
         </p>
       </div>
       <div class="mediafooter">
         <a href="#"><i class="far fa-envelope-open"></i></a>
         <p>Newsletter</p>
         <form>
-          <input type="text" name="" value="" placeholder="Votre email">
-          <input type="submit" name="" value="OK">
+          <input type="text" name="mail" value="mail" placeholder="Votre email">
+          <input type="submit" value="OK">
         </form>
       </div>
     </div>
